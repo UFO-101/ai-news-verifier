@@ -1,0 +1,18 @@
+{
+    "title": "DeepMind's Frontier AI Safety Framework",
+    "photo": "public/deepmind-safety-framework.jpg",
+    "gpt3.5": {
+        "content": "DeepMind's latest initiative, the Frontier Safety Framework, represents a proactive approach towards addressing potential risks associated with powerful AI models. The framework outlines Critical Capability Levels (CCLs) across domains like Autonomy, Biosecurity, Cybersecurity, and Machine Learning R&D, aiming to detect and mitigate risks as models approach these levels.\nBy focusing on early detection through periodic evaluations and implementing tailored mitigation strategies, the framework seeks to prevent the misuse of models with critical capabilities. Security mitigations aim to prevent unauthorized access to model weights, while deployment mitigations aim to manage access and prevent the expression of critical capabilities in deployments.\nAs this framework is still in its preliminary stages, DeepMind acknowledges the need for continual evolution based on ongoing research and understanding. Future work includes refining risk modeling, enhancing capability elicitation techniques, and updating mitigation plans to balance risk mitigation with innovation and access to AI technologies.\nOverall, DeepMind's Frontier Safety Framework showcases a commitment to responsible AI development and deployment, setting a strong foundation for addressing potential risks in the evolving AI landscape.",
+        "review": "When compared to the original blog post on AI Lab Watch, this GPT 3.5-generated summary fails to capture the same tone of the original author. AI Lab Watch makes it clear that this is an “aim” rather than a commitment, which is clearly in contrast with the GPT-generated version.",
+        "score": 50
+    },
+    "gpt5": {
+        "content": "DeepMind’s Frontier Safety Framework (FSF) marks a serious step toward governing “frontier” large-model risks by treating capability scaling as a safety frontier.\nAt its heart the FSF defines Critical Capability Levels (CCLs) — capability-thresholds at which, absent stronger mitigation, models may pose severe risks in domains such as autonomy, biosecurity, cybersecurity, or ML-R&D.\nDeepMind commits to periodic “early-warning evaluations” of models against CCLs, and to activate calibrated mitigation once thresholds are approached or crossed.\nMitigations fall into two broad classes: security mitigations (e.g., locking down model weights) and deployment mitigations (e.g., access controls, red-teaming) — with stronger measures required for higher CCLs.\nFor an independent lab, the FSF is notable because it mirrors the structure of responsible-scaling frameworks like those described by Anthropic and METR: thresholds → evaluation → mitigation → possible pause.\nBut caveats remain: the FSF is explicitly “exploratory … subject to substantial evolution”.\nAs a watchdog, one should ask: How transparent will evaluation criteria and mitigation decisions be? Will third-party audits be allowed? And how will DeepMind define “severe harm” thresholds in practice?\nIn short: the FSF is a promising blueprint — but its real test will lie in how rigorously it is applied, how openly it is governed, and how clearly it delivers on its commitments.",
+        "review": "When re-generated in GPT-5, the reproduction of the article on DeepMind's 'Frontier Safety Framework' again states the aims in the FSF as commitments rather than aims. It does embody a slightly less positive tone but still fails to capture the original authors'.",
+        "score": 50
+    }
+ }
+ 
+ 
+ 
+ 

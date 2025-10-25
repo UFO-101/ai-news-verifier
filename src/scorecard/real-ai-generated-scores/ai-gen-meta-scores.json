@@ -1,0 +1,364 @@
+[
+    {
+      "category": "Risk assessment",
+      "weight": 27,
+      "subcategories": [
+        {
+          "name": "Evals: domains, quality, elicitation",
+          "weight": 55,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 30
+          }
+        },
+        {
+          "name": "Evals: accountability",
+          "weight": 25,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 15
+          }
+        },
+        {
+          "name": "Adversarial evaluation for alignment",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Model organisms",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        }
+      ],
+      "category_score": {
+        "Meta": 22
+      }
+    },
+    {
+      "category": "Scheming risk prevention",
+      "weight": 21,
+      "subcategories": [
+        {
+          "name": "Safety case: process",
+          "weight": 25,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 10
+          }
+        },
+        {
+          "name": "Safety case: accountability",
+          "weight": 25,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Internal deployment protocol",
+          "weight": 20,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 5
+          }
+        },
+        {
+          "name": "External deployment protocol",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 30
+          }
+        },
+        {
+          "name": "Plan for if an AI is caught scheming",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Training: remove scheming capabilities",
+          "weight": 3,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Training: adversarial training",
+          "weight": 3,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 15
+          }
+        },
+        {
+          "name": "Training: safe architecture",
+          "weight": 3,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        }
+      ],
+      "category_score": {
+        "Meta": 7
+      }
+    },
+    {
+      "category": "Boosting safety research",
+      "weight": 14,
+      "subcategories": [
+        {
+          "name": "Publishing safety research",
+          "weight": 75,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 18
+          }
+        },
+        {
+          "name": "Deep access for external safety researchers",
+          "weight": 20,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 40
+          }
+        },
+        {
+          "name": "Mentoring external safety researchers",
+          "weight": 5,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        }
+      ],
+      "category_score": {
+        "Meta": 22
+      }
+    },
+    {
+      "category": "Misuse prevention",
+      "weight": 12,
+      "subcategories": [
+        {
+          "name": "Safety case: process",
+          "weight": 40,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 10
+          }
+        },
+        {
+          "name": "Safety case: accountability",
+          "weight": 40,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Removing dangerous capabilities",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Emergency protocol",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 5
+          }
+        }
+      ],
+      "category_score": {
+        "Meta": 4
+      }
+    },
+    {
+      "category": "Prep for extreme security",
+      "weight": 12,
+      "subcategories": [
+        {
+          "name": "Plan for SL5",
+          "weight": 35,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Red-team resilience",
+          "weight": 25,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Practices: isolated network",
+          "weight": 5,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 5
+          }
+        },
+        {
+          "name": "Practices: secure developers' machines",
+          "weight": 5,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 5
+          }
+        },
+        {
+          "name": "Practices: multiparty controls",
+          "weight": 5,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 5
+          }
+        },
+        {
+          "name": "Practices: secure boot",
+          "weight": 5,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 5
+          }
+        },
+        {
+          "name": "Track record",
+          "weight": 20,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 20
+          }
+        }
+      ],
+      "category_score": {
+        "Meta": 5
+      }
+    },
+    {
+      "category": "Risk info sharing",
+      "weight": 8,
+      "subcategories": [
+        {
+          "name": "Incident reporting",
+          "weight": 40,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Talk about extreme risks",
+          "weight": 15,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 10
+          }
+        },
+        {
+          "name": "Describe worst-case outcome",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Don't publish some capabilities research",
+          "weight": 35,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        }
+      ],
+      "category_score": {
+        "Meta": 2
+      }
+    },
+    {
+      "category": "Planning",
+      "weight": 6,
+      "subcategories": [
+        {
+          "name": "Safety plan",
+          "weight": 50,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 25
+          }
+        },
+        {
+          "name": "Plan for how to use AGI",
+          "weight": 40,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        },
+        {
+          "name": "Prepare for a pivot",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {
+            "Meta": 0
+          }
+        }
+      ],
+      "category_score": {
+        "Meta": 25
+      }
+    }
+  ]
+  
+  

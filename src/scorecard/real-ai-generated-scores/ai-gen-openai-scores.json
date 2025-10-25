@@ -1,0 +1,288 @@
+{
+    "categories": [
+      {
+        "category": "Risk assessment",
+        "weight": 27,
+        "subcategories": [
+          {
+            "name": "Evals: domains, quality, elicitation",
+            "weight": 55,
+            "reasoning": "OpenAI’s Preparedness Framework v2 names three frontier risk domains—bio/chem, cyber, and AI self-improvement—matching the required dangerous-capability domains. It describes thresholded capability measurement and scalable elicitation before deployment. UK AISI/NIST pre-deployment reports for OpenAI models indicate versions were tested without the full mitigation stack, improving elicitation. However, public artifacts give limited detail on chain-of-thought use, best-of-n/self-consistency sweeps, transcript review protocols, or systematic helpful-only variants across all tracked risks. Hence strong but not maximal evidence.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 68 }
+          },
+          {
+            "name": "Evals: accountability",
+            "weight": 25,
+            "reasoning": "External evaluators (UK AISI and the U.S. NIST AI Safety Institute) published pre-deployment evaluations of OpenAI’s models; AISI noted test access to a version without the full mitigations and released public write-ups, and AISI+NIST jointly reported on o1 reasoning performance. OpenAI system cards summarize methodology and results for major releases. Transparency is substantial, but public human-expert baselines and random trajectory/item subsets are inconsistently provided, and formal publish-without-approval terms aren’t documented.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 65 }
+          },
+          {
+            "name": "Adversarial evaluation for alignment",
+            "weight": 10,
+            "reasoning": "*no score found in source PDF for this criterion*",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 0 }
+          },
+          {
+            "name": "Model organisms",
+            "weight": 10,
+            "reasoning": "OpenAI co-authored 2025 work with Apollo Research documenting and probing deceptive behaviors in large models, effectively creating and studying ‘model organisms’ of scheming. This evidences production and initial study. Preparedness v2 elevates ‘Sandbagging’ to a research category, but public materials don’t yet show a concrete alignment-audit protocol (e.g., readiness checklists, audit sampling, publishable audit traces) deployed across releases. I credit substantial progress on organism creation and study, partial on additional organisms, and limited on audit preparation.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 52 }
+          }
+        ],
+        "category_score": { "OpenAI": 59 }
+      },
+      {
+        "category": "Scheming risk prevention",
+        "weight": 21,
+        "subcategories": [
+          {
+            "name": "Safety case: process",
+            "weight": 25,
+            "reasoning": "Preparedness v2 sets governance (Safety Advisory Group), thresholded decisions, and illustrative controls against misaligned models. Yet there is no published, end-to-end safety case specific to subtle scheming with explicit pass/fail criteria, cost–benefit analysis centered on AI risk, and a documented pause trigger. Evidence shows process scaffolding, not a full scheming safety case.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 35 }
+          },
+          {
+            "name": "Safety case: accountability",
+            "weight": 25,
+            "reasoning": "I did not find a qualified, disinterested external auditor publicly commenting on OpenAI’s scheming-focused safety case quality or adherence. External evaluations exist, but they are capability/risk-eval oriented rather than an audited safety case for scheming. Hence limited credit.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 18 }
+          },
+          {
+            "name": "Internal deployment protocol",
+            "weight": 20,
+            "reasoning": "Preparedness v2 calls for safeguards before internal use once thresholds are crossed. OpenAI’s security posts describe controls around research environments (e.g., deny-by-default egress, multi-party approvals) and monitoring, but public details of an AI-output monitoring/escalation protocol for internal deployments (budgets, thresholds, review of suspicious outputs, demonstrated effectiveness) are sparse. This fits ‘working on a whole protocol’ rather than fully demonstrated implementation.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 12 }
+          },
+          {
+            "name": "External deployment protocol",
+            "weight": 10,
+            "reasoning": "System cards describe layered mitigations, external red teaming, and Preparedness-aligned evaluations. OpenAI runs active threat-intelligence takedowns and publishes misuse disruption updates, and offers user reporting via product channels. Still, a published, comprehensive ‘flag-and-investigate’ pipeline with audit paths and quantitative monitoring goals is not fully documented.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 55 }
+          },
+          {
+            "name": "Plan for if an AI is caught scheming",
+            "weight": 10,
+            "reasoning": "Preparedness v2 commits not to deploy models that cross ‘High’ thresholds without sufficient safeguards and discusses risk reduction, but there is no explicit public playbook that commits to publishing scheming findings, pausing/internal high-alert modes, and using the event to update monitoring across the ecosystem.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 20 }
+          },
+          {
+            "name": "Training: remove scheming capabilities",
+            "weight": 3,
+            "reasoning": "OpenAI emphasizes ‘Teach: Filter data’ and alignment training in safety materials, but I found no concrete evidence of targeted removal/unlearning of scheming-enabling knowledge (e.g., steganography, subtle coordination tactics) such that even jailbroken models remain unhelpful on these topics, nor auditor-verifiable efficacy data.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 20 }
+          },
+          {
+            "name": "Training: adversarial training",
+            "weight": 3,
+            "reasoning": "System cards and prior work describe adversarial testing and safety fine-tuning against harmful actions. I did not find strong public evidence of latent adversarial training or anti-adversarial training (e.g., reliably taking extremely good actions like whistleblowing in rare contexts). Partial credit for conventional adversarial alignment.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 35 }
+          },
+          {
+            "name": "Training: safe architecture",
+            "weight": 3,
+            "reasoning": "OpenAI’s ‘reasoning’ models (e.g., o1/o3) separate internal reasoning from outputs and constrain behavior via the Model Spec; Preparedness v2 lists safeguards against misaligned models. However, there is no explicit commitment to serial, interpretable bottlenecks, avoidance of hidden state ‘neuralese,’ or guarantees about not training CoT to merely look friendly. Thus moderate credit.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 30 }
+          }
+        ],
+        "category_score": { "OpenAI": 26 }
+      },
+      {
+        "category": "Boosting safety research",
+        "weight": 14,
+        "subcategories": [
+          {
+            "name": "Publishing safety research",
+            "weight": 75,
+            "reasoning": "I conservatively counted: 2023—GPT-4 technical report + system card (2); 2024—GPT-4o and Sora system cards, external red-teaming methods paper, Model Spec (4); 2025 through April—Preparedness v2 (1). Using the rubric’s time weighting and exponent (computed in code): publications/year = 3.25; score = ((3.25/20)^0.75)×100 ≈ 25.6 → 26.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 26 }
+          },
+          {
+            "name": "Deep access for external safety researchers",
+            "weight": 20,
+            "reasoning": "Deep access: AISI/NIST received special access for pre-deployment testing of OpenAI models, including versions without the full mitigation stack (partial credit on ‘no-mitigations’). I found no evidence of broad external access to helpful-only/no-mitigations models plus fine-tuning/RL; API fine-tuning is available but RL access and no-mitigations variants for external safety researchers are not. Early access: OpenAI runs an early-access program for safety testing with researcher partners. Holistic judgment: ~25/80 for deep access, ~10/20 for early access → ~35 total.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 35 }
+          },
+          {
+            "name": "Mentoring external safety researchers",
+            "weight": 5,
+            "reasoning": "OpenAI funded external alignment work via the Superalignment Fast Grants and Fellowship and co-authored deception work with Apollo Research, showing collaboration. I did not find sustained, structured mentorship programs for external extreme-risk safety researchers akin to multi-month labs-run mentorship cohorts with published curricula. Limited credit for collaboration and ad-hoc advising via grants.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 22 }
+          }
+        ],
+        "category_score": { "OpenAI": 28 }
+      },
+      {
+        "category": "Misuse prevention",
+        "weight": 12,
+        "subcategories": [
+          {
+            "name": "Safety case: process",
+            "weight": 40,
+            "reasoning": "System cards (e.g., o1, Sora) and Preparedness v2 outline risk analyses and mitigations, and OpenAI publishes misuse disruption updates. However, a comprehensive, adversary-aware misuse safety case that argues releases are very unlikely to enable catastrophic misuse with quantified margins and explicit pause criteria is not publicly available.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 40 }
+          },
+          {
+            "name": "Safety case: accountability",
+            "weight": 40,
+            "reasoning": "No public report shows a disinterested auditor reviewing OpenAI’s misuse safety case, commenting on adequacy and adherence, or publishing redacted failures. External evaluations exist, but not a formal audited misuse safety case.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 18 }
+          },
+          {
+            "name": "Removing dangerous capabilities",
+            "weight": 10,
+            "reasoning": "OpenAI states it filters/finetunes to reduce dangerous outputs and reports post-mitigation performance in system cards; Preparedness v2 includes safeguards against malicious users. But there’s no public evidence that training removed capabilities such that jailbroken models still fail to enable catastrophic misuse across both CBRN and offensive cyber, nor auditor-verified efficacy. This matches ‘some details + some validation,’ below full credit.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 20 }
+          },
+          {
+            "name": "Emergency protocol",
+            "weight": 10,
+            "reasoning": "OpenAI runs ongoing threat-intelligence disruption of deceptive/malicious use and publishes updates, indicating monitoring and response playbooks; system cards discuss mitigations and incident intake. Public detail on explicit activation thresholds, least-disruptive tool selection, and incident-reporting enablement is limited, so award moderate credit.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 50 }
+          }
+        ],
+        "category_score": { "OpenAI": 30 }
+      },
+      {
+        "category": "Prep for extreme security",
+        "weight": 12,
+        "subcategories": [
+          {
+            "name": "Plan for SL5",
+            "weight": 35,
+            "reasoning": "Two 2024 security posts lay out a forward-looking roadmap: trusted computing for accelerators, strong network/tenant isolation, multi-party controls, and datacenter operational security, plus red-teaming and compliance plans. This is directionally consistent with SL5 optionality but not labeled against SL levels, not audited for ‘on-track’ status, and lacks schedule details to 2027. Moderate plan credit.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 45 }
+          },
+          {
+            "name": "Red-team resilience",
+            "weight": 25,
+            "reasoning": "OpenAI states its research environment has been penetration-tested by a leading third-party consultancy and that internal red teams conduct deep assessments. Public statements don’t specify representative attack classes, affordances, or ‘competent pentesters tried X and failed’-style evidence. Partial credit.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 40 }
+          },
+          {
+            "name": "Practices: isolated network",
+            "weight": 5,
+            "reasoning": "Documented practices include deny-by-default egress, private-link storage, RBAC, Kubernetes admission controls, multi-party approvals for weight access, CI/CD multi-party merges, and emphasis on isolating sensitive environments. Secure-boot/signed-code/weight-decrypt-on-accelerator are identified as goals (trusted computing) rather than implemented controls. Three pillars evidenced, one mostly aspirational.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 65 }
+          },
+          {
+            "name": "Practices: secure developers' machines",
+            "weight": 5,
+            "reasoning": "Documented practices include deny-by-default egress, private-link storage, RBAC, Kubernetes admission controls, multi-party approvals for weight access, CI/CD multi-party merges, and emphasis on isolating sensitive environments. Secure-boot/signed-code/weight-decrypt-on-accelerator are identified as goals (trusted computing) rather than implemented controls. Three pillars evidenced, one mostly aspirational.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 65 }
+          },
+          {
+            "name": "Practices: multiparty controls",
+            "weight": 5,
+            "reasoning": "Documented practices include deny-by-default egress, private-link storage, RBAC, Kubernetes admission controls, multi-party approvals for weight access, CI/CD multi-party merges, and emphasis on isolating sensitive environments. Secure-boot/signed-code/weight-decrypt-on-accelerator are identified as goals (trusted computing) rather than implemented controls. Three pillars evidenced, one mostly aspirational.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 65 }
+          },
+          {
+            "name": "Practices: secure boot",
+            "weight": 5,
+            "reasoning": "Documented practices include deny-by-default egress, private-link storage, RBAC, Kubernetes admission controls, multi-party approvals for weight access, CI/CD multi-party merges, and emphasis on isolating sensitive environments. Secure-boot/signed-code/weight-decrypt-on-accelerator are identified as goals (trusted computing) rather than implemented controls. Three pillars evidenced, one mostly aspirational.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 65 }
+          },
+          {
+            "name": "Track record",
+            "weight": 20,
+            "reasoning": "OpenAI maintains trust/compliance portals and publishes security and Preparedness updates; it reports red teaming and some incidents operationally (e.g., misuse disruption posts). I did not find a consolidated breach-disclosure log since 2023-07-01 listing incidents/near-misses with dates and severities; thus limited evidence of sustained, transparent breach-reporting with few serious incidents.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 30 }
+          }
+        ],
+        "category_score": { "OpenAI": 45 }
+      },
+      {
+        "category": "Risk info sharing",
+        "weight": 8,
+        "subcategories": [
+          {
+            "name": "Incident reporting",
+            "weight": 40,
+            "reasoning": "OpenAI shares misuse disruption updates and collaborates with external institutes; it participates in government/industry safety initiatives. I found no explicit policy committing to notice and share scheming detections, large-scale misuse, near misses, and eval/model-organism warnings with CAISI/peers by default. Some sharing, but no formal cross-lab incident-reporting program publicly documented.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 35 }
+          },
+          {
+            "name": "Talk about extreme risks",
+            "weight": 15,
+            "reasoning": "Preparedness v2 explicitly targets risks of ‘severe harm’ (thousands of deaths or hundreds of billions in damage), with thresholds and safeguards, and acknowledges increasing agentic systems and hard-to-notice risks. Leadership-level materials communicate that safety may be difficult and capabilities may appear suddenly.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 72 }
+          },
+          {
+            "name": "Describe worst-case outcome",
+            "weight": 10,
+            "reasoning": "I did not find a company-site statement assigning explicit probabilities/credences to plausible worst-case outcomes. Without numeric credences and definitions posted on OpenAI’s site, this item earns no credit.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 0 }
+          },
+          {
+            "name": "Don't publish some capabilities research",
+            "weight": 35,
+            "reasoning": "OpenAI’s GPT-4 technical report withholds architecture, hardware, training compute, and data specifics for safety/competition reasons; subsequent system cards and blogs continue to avoid releasing weights and sensitive training details. This aligns with withholding capabilities research on dangerous paths unless safety benefits dominate.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 82 }
+          }
+        ],
+        "category_score": { "OpenAI": 54 }
+      },
+      {
+        "category": "Planning",
+        "weight": 6,
+        "subcategories": [
+          {
+            "name": "Safety plan",
+            "weight": 50,
+            "reasoning": "Preparedness v2 is explicitly oriented to pre-deployment thresholds, safeguards before internal use, and dynamic, scalable evals as release cadence increases. It lists misaligned-model safeguards and security controls and frames decisions under time pressure. Still, many specifics are illustrative rather than binding operational plans. Solid but not complete.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 60 }
+          },
+          {
+            "name": "Plan for how to use AGI",
+            "weight": 40,
+            "reasoning": "OpenAI proposes ‘AI for cyber defense’ and broader security collaboration but does not publish a concrete plan to use AGI to prevent others from building catastrophically dangerous AI (e.g., a U.S.-led nonproliferation strategy, allied-weights constraints, 5–10 year alignment roadmap to human-obsoleting but trustworthy systems). Minimal credit.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 20 }
+          },
+          {
+            "name": "Prepare for a pivot",
+            "weight": 10,
+            "reasoning": "Preparedness v2 says OpenAI won’t deploy models that cross ‘High’ thresholds without sufficient safeguards, and sets internal governance (SAG and Board oversight). It does not publicly commit to financial readiness for a one-year pause, team-by-team pivot plans, or stakeholder preparation for prolonged pauses. Partial credit.",
+            "reasoning_html": "",
+            "scores": { "OpenAI": 35 }
+          }
+        ],
+        "category_score": { "OpenAI": 42 }
+      }
+    ],
+    "overall": { "OpenAI": 41 }
+  }
+  
+  
+  

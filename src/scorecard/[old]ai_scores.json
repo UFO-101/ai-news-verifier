@@ -1,0 +1,473 @@
+[
+  {
+    "category": "Risk assessment",
+    "weight": 27,
+    "subcategories": [
+      {
+        "name": "Evals: domains, quality, elicitation",
+        "weight": 55,
+        "scores": {
+          "Anthropic": 53,
+          "DeepMind": 43,
+          "OpenAI": 59,
+          "Meta": 0,
+          "xAI": 8,
+          "Microsoft": 5,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Evals: accountability",
+        "weight": 25,
+        "scores": {
+          "Anthropic": 17,
+          "DeepMind": 9,
+          "OpenAI": 12,
+          "Meta": 3,
+          "xAI": 8,
+          "Microsoft": 1,
+          "DeepSeek": 1
+        }
+      },
+      {
+        "name": "Adversarial evaluation for alignment",
+        "weight": 10,
+        "scores": {
+          "Anthropic": 56,
+          "DeepMind": 0,
+          "OpenAI": 7,
+          "Meta": 0,
+          "xAI": 0,
+          "Microsoft": 0,
+          "DeepSeek": 3
+        }
+      },
+      {
+        "name": "Model organisms",
+        "weight": 10,
+        "scores": {
+          "Anthropic": 71,
+          "DeepMind": 5,
+          "OpenAI": 1,
+          "Meta": 10,
+          "xAI": 0,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      }
+    ]
+  },
+  {
+    "category": "Scheming risk prevention",
+    "weight": 21,
+    "subcategories": [
+      {
+        "name": "Safety case: process",
+        "weight": 25,
+        "scores": {
+          "Anthropic": 4,
+          "DeepMind": 24,
+          "OpenAI": 8,
+          "Meta": 0,
+          "xAI": 2,
+          "Microsoft": 0,
+          "DeepSeek": 2
+        }
+      },
+      {
+        "name": "Safety case: accountability",
+        "weight": 25,
+        "scores": {
+          "Anthropic": 4,
+          "DeepMind": 4,
+          "OpenAI": 4,
+          "Meta": 10,
+          "xAI": 0,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Internal deployment protocol",
+        "weight": 20,
+        "scores": {
+          "Anthropic": 3,
+          "DeepMind": 2,
+          "OpenAI": 6,
+          "Meta": 9,
+          "xAI": 0,
+          "Microsoft": 3,
+          "DeepSeek": 3
+        }
+      },
+      {
+        "name": "External deployment protocol",
+        "weight": 10,
+        "scores": {
+          "Anthropic": 0,
+          "DeepMind": 0,
+          "OpenAI": 5,
+          "Meta": 0,
+          "xAI": 0,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Plan for if an AI is caught scheming",
+        "weight": 10,
+        "scores": {
+          "Anthropic": 0,
+          "DeepMind": 8,
+          "OpenAI": 0,
+          "Meta": 0,
+          "xAI": 0,
+          "Microsoft": 3,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Training: remove scheming capabilities",
+        "weight": 3,
+        "scores": {
+          "Anthropic": 0,
+          "DeepMind": 0,
+          "OpenAI": 1,
+          "Meta": 0,
+          "xAI": 0,
+          "Microsoft": 1,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Training: adversarial training",
+        "weight": 3,
+        "scores": {
+          "Anthropic": 40,
+          "DeepMind": 55,
+          "OpenAI": 56,
+          "Meta": 45,
+          "xAI": 49,
+          "Microsoft": 48,
+          "DeepSeek": 54
+        }
+      },
+      {
+        "name": "Training: safe architecture",
+        "weight": 3,
+        "scores": {
+          "Anthropic": 54,
+          "DeepMind": 60,
+          "OpenAI": 65,
+          "Meta": 45,
+          "xAI": 58,
+          "Microsoft": 44,
+          "DeepSeek": 59
+        }
+      }
+    ]
+  },
+  {
+    "category": "Boosting safety research",
+    "weight": 14,
+    "subcategories": [
+      {
+        "name": "Publishing safety research",
+        "weight": 75,
+        "scores": {
+          "Anthropic": 88,
+          "DeepMind": 63,
+          "OpenAI": 35,
+          "Meta": 26,
+          "xAI": 5,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Deep access for external safety researchers",
+        "weight": 20,
+        "scores": {
+          "Anthropic": 11,
+          "DeepMind": 0,
+          "OpenAI": 12,
+          "Meta": 34,
+          "xAI": 7,
+          "Microsoft": 38,
+          "DeepSeek": 36
+        }
+      },
+      {
+        "name": "Mentoring external safety researchers",
+        "weight": 5,
+        "scores": {
+          "Anthropic": 100,
+          "DeepMind": 100,
+          "OpenAI": 11,
+          "Meta": 0,
+          "xAI": 0,
+          "Microsoft": 6,
+          "DeepSeek": 0
+        }
+      }
+    ]
+  },
+  {
+    "category": "Misuse prevention",
+    "weight": 12,
+    "subcategories": [
+      {
+        "name": "Safety case: process",
+        "weight": 40,
+        "scores": {
+          "Anthropic": 26,
+          "DeepMind": 16,
+          "OpenAI": 5,
+          "Meta": 7,
+          "xAI": 8,
+          "Microsoft": 11,
+          "DeepSeek": 2
+        }
+      },
+      {
+        "name": "Safety case: accountability",
+        "weight": 40,
+        "scores": {
+          "Anthropic": 3,
+          "DeepMind": 6,
+          "OpenAI": 0,
+          "Meta": 4,
+          "xAI": 8,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Removing dangerous capabilities",
+        "weight": 10,
+        "scores": {
+          "Anthropic": 0,
+          "DeepMind": 0,
+          "OpenAI": 20,
+          "Meta": 5,
+          "xAI": 6,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Emergency protocol",
+        "weight": 10,
+        "scores": {
+          "Anthropic": 18,
+          "DeepMind": 0,
+          "OpenAI": 0,
+          "Meta": 9,
+          "xAI": 0,
+          "Microsoft": 1,
+          "DeepSeek": 2
+        }
+      }
+    ]
+  },
+  {
+    "category": "Prep for extreme security",
+    "weight": 12,
+    "subcategories": [
+      {
+        "name": "Plan for SL5",
+        "weight": 35,
+        "scores": {
+          "Anthropic": 10,
+          "DeepMind": 0,
+          "OpenAI": 0,
+          "Meta": 0,
+          "xAI": 1,
+          "Microsoft": 10,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Red-team resilience",
+        "weight": 25,
+        "scores": {
+          "Anthropic": 8,
+          "DeepMind": 4,
+          "OpenAI": 6,
+          "Meta": 8,
+          "xAI": 0,
+          "Microsoft": 0,
+          "DeepSeek": 5
+        }
+      },
+      {
+        "name": "Practices: isolated network",
+        "weight": 5,
+        "scores": {
+          "Anthropic": 15,
+          "DeepMind": 57,
+          "OpenAI": 0,
+          "Meta": 2,
+          "xAI": 0,
+          "Microsoft": 6,
+          "DeepSeek": 7
+        }
+      },
+      {
+        "name": "Practices: secure developers' machines",
+        "weight": 5,
+        "scores": {
+          "Anthropic": 33,
+          "DeepMind": 22,
+          "OpenAI": 0,
+          "Meta": 7,
+          "xAI": 9,
+          "Microsoft": 6,
+          "DeepSeek": 2
+        }
+      },
+      {
+        "name": "Practices: multiparty controls",
+        "weight": 5,
+        "scores": {
+          "Anthropic": 8,
+          "DeepMind": 32,
+          "OpenAI": 4,
+          "Meta": 0,
+          "xAI": 3,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Practices: secure boot",
+        "weight": 5,
+        "scores": {
+          "Anthropic": 1,
+          "DeepMind": 20,
+          "OpenAI": 0,
+          "Meta": 10,
+          "xAI": 2,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Track record",
+        "weight": 20,
+        "scores": {
+          "Anthropic": 0,
+          "DeepMind": 2,
+          "OpenAI": 7,
+          "Meta": 0,
+          "xAI": 7,
+          "Microsoft": 1,
+          "DeepSeek": 7
+        }
+      }
+    ]
+  },
+  {
+    "category": "Risk info sharing",
+    "weight": 8,
+    "subcategories": [
+      {
+        "name": "Incident reporting",
+        "weight": 40,
+        "scores": {
+          "Anthropic": 10,
+          "DeepMind": 0,
+          "OpenAI": 4,
+          "Meta": 0,
+          "xAI": 0,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Talk about extreme risks",
+        "weight": 15,
+        "scores": {
+          "Anthropic": 52,
+          "DeepMind": 25,
+          "OpenAI": 17,
+          "Meta": 7,
+          "xAI": 19,
+          "Microsoft": 1,
+          "DeepSeek": 6
+        }
+      },
+      {
+        "name": "Describe worst-case outcome",
+        "weight": 10,
+        "scores": {
+          "Anthropic": 8,
+          "DeepMind": 9,
+          "OpenAI": 6,
+          "Meta": 0,
+          "xAI": 3,
+          "Microsoft": 7,
+          "DeepSeek": 4
+        }
+      },
+      {
+        "name": "Don't publish some capabilities research",
+        "weight": 35,
+        "scores": {
+          "Anthropic": 80,
+          "DeepMind": 25,
+          "OpenAI": 65,
+          "Meta": 10,
+          "xAI": 75,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      }
+    ]
+  },
+  {
+    "category": "Planning",
+    "weight": 6,
+    "subcategories": [
+      {
+        "name": "Safety plan",
+        "weight": 50,
+        "scores": {
+          "Anthropic": 23,
+          "DeepMind": 52,
+          "OpenAI": 0,
+          "Meta": 0,
+          "xAI": 7,
+          "Microsoft": 7,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Plan for how to use AGI",
+        "weight": 40,
+        "scores": {
+          "Anthropic": 5,
+          "DeepMind": 9,
+          "OpenAI": 0,
+          "Meta": 7,
+          "xAI": 0,
+          "Microsoft": 0,
+          "DeepSeek": 0
+        }
+      },
+      {
+        "name": "Prepare for a pivot",
+        "weight": 10,
+        "scores": {
+          "Anthropic": 8,
+          "DeepMind": 5,
+          "OpenAI": 8,
+          "Meta": 0,
+          "xAI": 0,
+          "Microsoft": 0,
+          "DeepSeek": 4
+        }
+      }
+    ]
+  }
+]

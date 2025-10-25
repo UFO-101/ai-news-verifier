@@ -1,0 +1,285 @@
+{
+    "categories": [
+    {
+      "category": "Risk assessment",
+      "weight": 27,
+      "subcategories": [
+        {
+          "name": "Evals: domains, quality, elicitation",
+          "weight": 55,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 75 }
+        },
+        {
+          "name": "Evals: accountability",
+          "weight": 25,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 65 }
+        },
+        {
+          "name": "Adversarial evaluation for alignment",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": {}
+        },
+        {
+          "name": "Model organisms",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 100 }
+        }
+      ],
+      "category_score": { "Anthropic": 0 }
+    },
+    {
+      "category": "Scheming risk prevention",
+      "weight": 21,
+      "subcategories": [
+        {
+          "name": "Safety case: process",
+          "weight": 25,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 70 }
+        },
+        {
+          "name": "Safety case: accountability",
+          "weight": 25,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 55 }
+        },
+        {
+          "name": "Internal deployment protocol",
+          "weight": 20,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 40 }
+        },
+        {
+          "name": "External deployment protocol",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 70 }
+        },
+        {
+          "name": "Plan for if an AI is caught scheming",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 60 }
+        },
+        {
+          "name": "Training: remove scheming capabilities",
+          "weight": 3,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 30 }
+        },
+        {
+          "name": "Training: adversarial training",
+          "weight": 3,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 45 }
+        },
+        {
+          "name": "Training: safe architecture",
+          "weight": 3,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 35 }
+        }
+      ],
+      "category_score": { "Anthropic": 0 }
+    },
+    {
+      "category": "Boosting safety research",
+      "weight": 14,
+      "subcategories": [
+        {
+          "name": "Publishing safety research",
+          "weight": 75,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 37 }
+        },
+        {
+          "name": "Deep access for external safety researchers",
+          "weight": 20,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 55 }
+        },
+        {
+          "name": "Mentoring external safety researchers",
+          "weight": 5,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 40 }
+        }
+      ],
+      "category_score": { "Anthropic": 0 }
+    },
+    {
+      "category": "Misuse prevention",
+      "weight": 12,
+      "subcategories": [
+        {
+          "name": "Safety case: process",
+          "weight": 40,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 65 }
+        },
+        {
+          "name": "Safety case: accountability",
+          "weight": 40,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 50 }
+        },
+        {
+          "name": "Removing dangerous capabilities",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 25 }
+        },
+        {
+          "name": "Emergency protocol",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 70 }
+        }
+      ],
+      "category_score": { "Anthropic": 0 }
+    },
+    {
+      "category": "Prep for extreme security",
+      "weight": 12,
+      "subcategories": [
+        {
+          "name": "Plan for SL5",
+          "weight": 35,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 30 }
+        },
+        {
+          "name": "Red-team resilience",
+          "weight": 25,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 50 }
+        },
+        {
+          "name": "Practices: isolated network",
+          "weight": 5,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 60 }
+        },
+        {
+          "name": "Practices: secure developers' machines",
+          "weight": 5,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 60 }
+        },
+        {
+          "name": "Practices: multiparty controls",
+          "weight": 5,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 60 }
+        },
+        {
+          "name": "Practices: secure boot",
+          "weight": 5,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 60 }
+        },
+        {
+          "name": "Track record",
+          "weight": 20,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 50 }
+        }
+      ],
+      "category_score": { "Anthropic": 0 }
+    },
+    {
+      "category": "Risk info sharing",
+      "weight": 8,
+      "subcategories": [
+        {
+          "name": "Incident reporting",
+          "weight": 40,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 60 }
+        },
+        {
+          "name": "Talk about extreme risks",
+          "weight": 15,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 85 }
+        },
+        {
+          "name": "Describe worst-case outcome",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 40 }
+        },
+        {
+          "name": "Don't publish some capabilities research",
+          "weight": 35,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 60 }
+        }
+      ],
+      "category_score": { "Anthropic": 0 }
+    },
+    {
+      "category": "Planning",
+      "weight": 6,
+      "subcategories": [
+        {
+          "name": "Safety plan",
+          "weight": 50,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 70 }
+        },
+        {
+          "name": "Plan for how to use AGI",
+          "weight": 40,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 40 }
+        },
+        {
+          "name": "Prepare for a pivot",
+          "weight": 10,
+          "description": "*model reasoning*",
+          "description_html": "",
+          "scores": { "Anthropic": 65 }
+        }
+      ],
+      "category_score": { "Anthropic": 0 }
+    }
+  ],
+  "overall": { "Anthropic": 0 }
+} 

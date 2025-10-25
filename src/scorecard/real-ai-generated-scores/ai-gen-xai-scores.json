@@ -1,0 +1,369 @@
+{
+    "categories": [
+      {
+        "category": "Risk assessment",
+        "weight": 27,
+        "subcategories": [
+          {
+            "name": "Evals: domains, quality, elicitation",
+            "weight": 55,
+            "reasoning": "xAI’s RMF and Grok model cards explicitly evaluate dual-use domains (CBRN biology, chemistry) and offensive cyber and discuss ‘concerning propensities’ (deception, manipulation). They also use specific benchmarks (e.g., VCT, WMDP-Bio/Cyber, BioLP-bench, Cybench) and jailbreak stress-tests. However, I don’t find evidence of high-quality elicitation practices required here (e.g., helpful-only/base variants, no inference-time mitigations during evals, best-of-n/self-consistency, systematic transcript review). Much of their reported evaluation uses mitigation-laden system prompts rather than unmitigated helpful-only variants, so credit is partial, not full.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 35
+            }
+          },
+          {
+            "name": "Evals: accountability",
+            "weight": 25,
+            "reasoning": "The RMF references work with outside entities (government bodies, private testing firms) and notes ‘independent third-party assessments’ on cyber, but I find no public evidence of (a) external evaluators with special access (incl. no-mitigations) and the right to publish without approval, nor (b) a qualified disinterested internal auditor publicly commenting on rigor/findings with methods/results and random item release. Minimal credit for indicating some third-party involvement; not for open accountability.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 5
+            }
+          },
+          {
+            "name": "Adversarial evaluation for alignment",
+            "weight": 10,
+            "reasoning": "",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Model organisms",
+            "weight": 10,
+            "reasoning": "Model organisms: produce at least one organism of scheming/misalignment: No public xAI work found producing concrete ‘model organisms’ of scheming (e.g., controlled demonstrations of alignment-faking behaviors). Under the scoring rules, no credit without artifacts.\n\n— Model organisms: additional organisms: Same as above—no additional organisms beyond a first example identified.\n\n— Model organisms: study organisms (variations, tested interventions) to estimate P(scheming): No evidence of systematic intervention studies on misalignment organisms to estimate P(scheming) or test mitigations.\n\n— Model organisms: prepare alignment audits: No public plan or artifacts for alignment audits built on model organisms.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          }
+        ],
+        "category_score": {
+          "xAI": 21
+        }
+      },
+      {
+        "category": "Scheming risk prevention",
+        "weight": 21,
+        "subcategories": [
+          {
+            "name": "Safety case: process",
+            "weight": 25,
+            "reasoning": "RMF acknowledges ‘loss of control’ risks and measures ‘concerning propensities’ (e.g., deception), but I don’t find a comprehensive, publishable safety case for internal deployment that includes a dedicated control-eval, pause/trigger criteria, and cost-benefit analysis focused on AI risk. Partial, for having a framework and some measurements.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 10
+            }
+          },
+          {
+            "name": "Safety case: accountability",
+            "weight": 25,
+            "reasoning": "No qualified, disinterested auditor publicly commenting on plans, adherence, and safety-case quality; no public safety case documents with auditor notes.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Internal deployment protocol",
+            "weight": 20,
+            "reasoning": "I don’t find a published, operational internal protocol with AI monitoring, trusted monitors/probes, edit/resample, escalation thresholds, or substantive suspicious-event auditing. At best, signals of evolving monitoring; that maps to the ‘will do later/working on’ bucket.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 5
+            }
+          },
+          {
+            "name": "External deployment protocol",
+            "weight": 10,
+            "reasoning": "xAI uses policies, refusal prompts, filters, and monitoring in deployed products (e.g., Grok on X) and references rapid response to observed risks. However, I don’t find a detailed public ‘flag-and-investigate’ pipeline with privacy-respecting audit paths and incident handling specific to misalignment, beyond general AUP and safeguards. Partial credit.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 15
+            }
+          },
+          {
+            "name": "Plan for if an AI is caught scheming",
+            "weight": 10,
+            "reasoning": "No public, specific plan committing to publish findings, pause/switch to high-alert, and feed lessons back into monitoring/ecosystem.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Training: remove scheming capabilities",
+            "weight": 3,
+            "reasoning": "I don’t find evidence of filtering/unlearning to reduce knowledge/skills that enable scheming (e.g., steganography/coordination) unless a strong control case is demonstrated. No explicit ‘ignorant-by-default’ approach on these topics.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Training: adversarial training",
+            "weight": 3,
+            "reasoning": "General ‘safety training’ and refusal policies are described, but I don’t see specific latent adversarial training or anti-adversarial training commitments aimed at extreme-risk high-stakes contexts. Small partial credit for general adversarial robustness work (e.g., jailbreak testing).",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 10
+            }
+          },
+          {
+            "name": "Training: safe architecture",
+            "weight": 3,
+            "reasoning": "Models emphasize ‘reasoning’ and system-prompt mitigations, but there’s no public commitment to interpretable serial bottlenecks, natural-language-only reasoning constraints, or avoiding hidden ‘neuralese’ states as an architectural safety principle. Minimal credit.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 5
+            }
+          }
+        ],
+        "category_score": {
+          "xAI": 5
+        }
+      },
+      {
+        "category": "Boosting safety research",
+        "weight": 14,
+        "subcategories": [
+          {
+            "name": "Publishing safety research",
+            "weight": 75,
+            "reasoning": "I find no xAI publications (2023–Apr 2025) that clearly qualify as extreme-risk-relevant safety research under this rubric. Using the rubric’s formula with 0 publications yields 0%.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Deep access for external safety researchers",
+            "weight": 20,
+            "reasoning": "Boosting safety research: Deep access — helpful-only & no-mitigations access: No evidence that xAI provides safety researchers with helpful-only/no-mitigations variants for deep evaluation. The RMF contemplates selective access for trusted auditors, but without concrete details matching this requirement.\n\n— Boosting safety research: Deep access — fine-tuning & RL access: No public program granting external safety researchers fine-tuning/RL access for deep safety work.\n\n— Boosting safety research: Early access (for safety research): I don’t find a program of early access specifically for external safety researchers (distinct from product betas).",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Mentoring external safety researchers",
+            "weight": 5,
+            "reasoning": "No public evidence of structured mentorship/advisory programs or safety-focused co-authorships aimed at extreme-risk topics.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          }
+        ],
+        "category_score": {
+          "xAI": 0
+        }
+      },
+      {
+        "category": "Misuse prevention",
+        "weight": 12,
+        "subcategories": [
+          {
+            "name": "Safety case: process",
+            "weight": 40,
+            "reasoning": "RMF lays out dual-use risk thresholds and benchmark-linked acceptance criteria (e.g., answer-rate < 1 in 20 on restricted biology/chemistry queries) and describes layered safeguards and adversarial testing. That’s a start, but I don’t see a full misuse safety case showing ‘very unlikely’ catastrophic misuse with adversarial users and cost-benefit analysis. Partial credit.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 20
+            }
+          },
+          {
+            "name": "Safety case: accountability",
+            "weight": 40,
+            "reasoning": "No qualified, disinterested auditor visibly observing and publicly commenting on adequacy/adherence; no public safety-case documents with auditor notes.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Removing dangerous capabilities",
+            "weight": 10,
+            "reasoning": "Emphasis on refusal policies, filters, and system prompts, but not validated unlearning/filtering of dangerous capabilities such that even jailbroken models don’t enable misuse. At most, statements about working on robustness imply ‘working on this’ → minimal rubric credit.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 10
+            }
+          },
+          {
+            "name": "Emergency protocol",
+            "weight": 10,
+            "reasoning": "RMF implies heightened safeguards and rapid response to observed risks, but I don’t see a concrete public emergency protocol with tools, thresholds for activation, and incident reporting enablement. Minimal credit.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 5
+            }
+          }
+        ],
+        "category_score": {
+          "xAI": 10
+        }
+      },
+      {
+        "category": "Prep for extreme security",
+        "weight": 12,
+        "subcategories": [
+          {
+            "name": "Plan for SL5",
+            "weight": 35,
+            "reasoning": "No public, time-bound plan toward SL5-level optionality (weights security for training/internal use, serial wall-clock items, external audit of plan adequacy/on-track status).",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Red-team resilience",
+            "weight": 25,
+            "reasoning": "No public statements of competent pentesters attempting specified attacks under realistic affordances and failing, with enough detail to evaluate relevance.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Practices: isolated network",
+            "weight": 5,
+            "reasoning": "No public evidence of HSM-backed weight storage, tight egress controls with hardware/guards, or policies preventing developer weight exfiltration during training/internal deployment.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Practices: secure developers' machines",
+            "weight": 5,
+            "reasoning": "No public documentation of secure workstation isolation or hardware-key requirements for developer auth specific to model security.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Practices: multiparty controls",
+            "weight": 5,
+            "reasoning": "No public commitment to two-person approvals on cluster config/accelerator code or action-level approvals with a secure-workstation signer.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Practices: secure boot",
+            "weight": 5,
+            "reasoning": "No public evidence of secure-boot deployment requirements or cryptographic constraints that keep weights decryptable only on accelerators.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Track record",
+            "weight": 20,
+            "reasoning": "Public reporting indicates a leaked xAI API key and related disclosure-process issues in 2025; I don’t find a robust public breach-disclosure page listing incidents/near-misses with timelines. That combination merits low credit.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 5
+            }
+          }
+        ],
+        "category_score": {
+          "xAI": 1
+        }
+      },
+      {
+        "category": "Risk info sharing",
+        "weight": 8,
+        "subcategories": [
+          {
+            "name": "Incident reporting",
+            "weight": 40,
+            "reasoning": "I don’t find a public policy committing to notice-and-share of incidents/warning signs to CAISI and, when appropriate, other firms, nor public incident digests.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Talk about extreme risks",
+            "weight": 15,
+            "reasoning": "RMF acknowledges loss-of-control scenarios and difficult-to-measure risks (deception, sycophancy); leadership posts and news also describe engagement with EU safety/security code of practice. Some positive credit for communicating extreme-risk realities, though not deeply quantified.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 25
+            }
+          },
+          {
+            "name": "Describe worst-case outcome",
+            "weight": 10,
+            "reasoning": "No company post on x.ai that states a plausible worst case with explicit credences and clear definitions posted on the company website.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Don't publish some capabilities research",
+            "weight": 35,
+            "reasoning": "No clear public policy describing restraint on publishing dangerous-path capabilities (esp. LM pretraining/distributed-training methods) proportional to safety benefits. Absent such a policy, no credit.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          }
+        ],
+        "category_score": {
+          "xAI": 4
+        }
+      },
+      {
+        "category": "Planning",
+        "weight": 6,
+        "subcategories": [
+          {
+            "name": "Safety plan",
+            "weight": 50,
+            "reasoning": "RMF sets some thresholds (e.g., restricted-query answer-rate target) and acknowledges rushed, real-world risks, but I don’t find a concrete, time-pressured plan covering internal scheming, API misuse, human power grabs, and weight/IP theft with clear triggers/resources. Partial credit.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 15
+            }
+          },
+          {
+            "name": "Plan for how to use AGI",
+            "weight": 40,
+            "reasoning": "No public plan for using advanced AI to block dangerous proliferation (e.g., coordinated nonproliferation with governments, public-goods deployment timelines).",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          },
+          {
+            "name": "Prepare for a pivot",
+            "weight": 10,
+            "reasoning": "No public plan to pause dangerous capability development or internal deployment with pre-baked team assignments, one-year financial readiness, and stakeholder prep.",
+            "reasoning_html": "",
+            "scores": {
+              "xAI": 0
+            }
+          }
+        ],
+        "category_score": {
+          "xAI": 8
+        }
+      }
+    ],
+    "overall": {
+      "xAI": 9
+    }
+  }
+  
+  

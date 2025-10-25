@@ -1,21 +1,24 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import ArticlePage from './pages/ArticlePage'
+import ScorecardPage from './pages/ScorecardPage'
+import ModelSelector from './components/ModelSelector'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedModel, setSelectedModel] = useState('gpt-3.5-turbo')
 
   return (
-    <>
-      <h1>AI News Verifier</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-    </>
+    <Router basename="/ai-news-verifier">
+      <ModelSelector selectedModel={selectedModel} setSelectedModel={setSelectedModel} />
+      <Routes>
+        <Route path="/" element={<Navigate to="/blog" replace />} />
+        <Route path="/blog" element={<HomePage selectedModel={selectedModel} />} />
+        <Route path="/article/:id" element={<ArticlePage selectedModel={selectedModel} />} />
+        <Route path="/scorecard" element={<ScorecardPage />} />
+      </Routes>
+    </Router>
   )
 }
 
