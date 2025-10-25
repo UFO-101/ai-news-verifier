@@ -1,7 +1,7 @@
 .scorecard-page {
   max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0.5rem;
   padding-top: 6rem;
 }
 
@@ -14,8 +14,8 @@
 
 .heatmaps-wrapper {
   display: grid;
-  grid-template-columns: 300px 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 370px 1fr 1fr;
+  gap: 0.5rem;
   padding-bottom: 1rem;
   align-items: start;
 }
@@ -56,7 +56,7 @@
 
 .labels-container {
   display: grid;
-  grid-template-columns: 150px 150px;
+  grid-template-columns: 150px 220px;
   gap: 0;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -487,12 +487,12 @@
 
 @media (max-width: 1400px) {
   .heatmaps-wrapper {
-    grid-template-columns: 250px 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 300px 1fr 1fr;
+    gap: 0.5rem;
   }
 
   .labels-container {
-    grid-template-columns: 120px 130px;
+    grid-template-columns: 120px 180px;
   }
 }
 
@@ -532,7 +532,7 @@
   }
 
   .labels-container {
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 100px 140px;
   }
 
   .company-logo {
