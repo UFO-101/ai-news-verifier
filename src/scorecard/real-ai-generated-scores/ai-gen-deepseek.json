@@ -1,0 +1,388 @@
+{
+    "categories": [
+      {
+        "category": "Boosting safety research",
+        "weight": 14,
+        "subcategories": [
+          {
+            "name": "Publishing safety research",
+            "weight": 75,
+            "reasoning": "The formula rewards DeepSeek-authored, extreme-risk-relevant safety papers (misalignment/control/dangerous-capability evals). I couldn’t loc ate such publications by DeepSeek for 2023–Apr 2025; prominent safety studies about DeepSeek are by third parties (academia/industry/government). Calculation: publications_per_year ≈ 0 → score = min(((0/20)^0.75)*100, 100) = 0. NIST+2METR’s Autonomy Evaluation Resources+2",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "Deep access for external safety researchers",
+            "weight": 20,
+            "reasoning": "Purpose: helpful-only & no-mitigations access and fine-tuning/RL. DeepSeek released open weights and licensed R1 under MIT; researchers can run no-mitigations variants and perform fine-tuning/RL. Because access is shared with everyone (not restricted to safety researchers), apply half cr edit on each 40% item: 0.5×40 + 0.5×40 = 40%. No evidence of a distinct early-access program → +0%. DeepSeek API Docs",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 40
+            }
+          },
+          {
+            "name": "Mentoring external safety researchers",
+            "weight": 5,
+            "reasoning": "I found no mentoring programs, co-authorships, or advisory initiatives focused on extreme-risk safety run by DeepSeek. NIST",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          }
+        ],
+        "category_score": {
+          "DeepSeek": 8
+        }
+      },
+      {
+        "category": "Misuse prevention",
+        "weight": 12,
+        "subcategories": [
+          {
+            "name": "Safety case: process (misuse prevention)",
+            "weight": 40,
+            "reasoning": "No published misuse safety case showing deployment would be very unlikely to enable catastrophic misuse once models are dangerous by default. External testing shows ease of eliciting harmful content, which wei ghs against credit. WIRED+1",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "Safety case: accountability (misuse prevention)",
+            "weight": 40,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Removing dangerous capabilities",
+            "weight": 10,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Emergency protocol",
+            "weight": 10,
+            "reasoning": "No public emergency protocol to rapidly reduce misuse risk (tool s, thresholds, activation criteria). A public status page covers uptime/incident s, not misuse emergencies. status.deepseek.com",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          }
+        ],
+        "category_score": {
+          "DeepSeek": 0
+        }
+      },
+      {
+        "category": "Planning",
+        "weight": 6,
+        "subcategories": [
+          {
+            "name": "Safety plan",
+            "weight": 50,
+            "reasoning": "No concrete plan for dangerous capabilities appearing soon that addresses internal scheming, API misuse, human power grabs, and theft under rushed conditions. NIST",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "Plan for how to use AGI",
+            "weight": 40,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Prepare for a pivot",
+            "weight": 10,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          }
+        ],
+        "category_score": {
+          "DeepSeek": 0
+        }
+      },
+      {
+        "category": "Prep for extreme security",
+        "weight": 12,
+        "subcategories": [
+          {
+            "name": "Plan for SL5",
+            "weight": 35,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Red-team resilience",
+            "weight": 25,
+            "reasoning": "I saw no DeepSeek statements like “competent pentesters attempted X under realistic affordances and failed” with sufficient detail. Exter nal security write-ups highlight vulnerabilities, not resilience. Cisco Blogs+1",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "Practices: isolated network",
+            "weight": 5,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Practices: secure developers' machines",
+            "weight": 5,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Practices: multiparty controls",
+            "weight": 5,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Practices: secure boot",
+            "weight": 5,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Track record",
+            "weight": 20,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          }
+        ],
+        "category_score": {
+          "DeepSeek": 0
+        }
+      },
+      {
+        "category": "Risk assessment",
+        "weight": 27,
+        "subcategories": [
+          {
+            "name": "Evals: domains, quality, elicitation",
+            "weight": 55,
+            "reasoning": "I find no DeepSeek-authored public evals covering the dangerous-capability domains called out (offensive cyber, CBRN, scheming, AI-R&D) or explicit elicitation protocols (helpful-only variants, no inferenc e-time mitigations, pass-n/best-of-n, transcript review). DeepSeek’s V3 and R1 technic al materials emphasize capability benchmarks (MMLU-Pro, GPQA, SWE-bench) rather than catastrophic-risk evals. External testing by Cisco and CAISI instead reports high jailbreak susceptibility, implying weak internal elicitation/Q A for danger domains. arXiv+2Cisco Blogs+2",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 5
+            }
+          },
+          {
+            "name": "Evals: accountability",
+            "weight": 25,
+            "reasoning": "The rubric asks for external evaluators with special access (inc l. no-mitigations) and the right to publish, or strong internal-eval accountability with public methods/results. CAISI (NIST) and METR published evaluations of DeepSeek models, but these relied on public/open weights or endpoints—there’s no evidence DeepSeek itself granted privileged access or structured an internal accountability process with a disinterested auditor. Transparency remains limited. NIST+2NIST+2",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 15
+            }
+          },
+          {
+            "name": "Adversarial evaluation for alignment",
+            "weight": 10,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Model organisms",
+            "weight": 10,
+            "reasoning": "I found no DeepSeek work creating, studying, or preparing audits around model organisms of scheming (e.g., alignment-faking experiments). External analyses of censorship and refusal behaviors exist, but they are not DeepSeek-run model-organism programs nor alignment audits per the rubric. arXiv+1",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          }
+        ],
+        "category_score": {
+          "DeepSeek": 7
+        }
+      },
+      {
+        "category": "Risk info sharing",
+        "weight": 8,
+        "subcategories": [
+          {
+            "name": "Incident reporting",
+            "weight": 40,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Talk about extreme risks",
+            "weight": 15,
+            "reasoning": "I found no leadership communications acknowledging that misalignment risks may be hard to notice, capabilities can appear suddenly, and safety may be difficult—at the specificity level the rubric expect s. NIST",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "Describe worst-case outcome",
+            "weight": 10,
+            "reasoning": "No company-hosted statement of a plausible worst case with specific probabilities and clear definitions posted on DeepSeek’s site. NIST",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "Don't publish some capabilities research",
+            "weight": 35,
+            "reasoning": "DeepSeek widely publishes capability advances and open weights (e.g., R1 under MIT). I found no policy to withhold dangerous-path capabilities research; external analyses argue openness increased risk exposure. DeepSeek API Docs+1",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          }
+        ],
+        "category_score": {
+          "DeepSeek": 0
+        }
+      },
+      {
+        "category": "Scheming risk prevention",
+        "weight": 21,
+        "subcategories": [
+          {
+            "name": "Safety case: process",
+            "weight": 25,
+            "reasoning": "No public safety case laying out how DeepSeek ensures and demonstrates small risks from subtle scheming during internal deployment (including control evals, publishable details, and risk-reduction/pausing triggers). External reports instead highlight jailbreak and harmful-content compliance. Cisco Blogs+1",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "Safety case: accountability",
+            "weight": 25,
+            "reasoning": "No evidence of a qualified, disinterested auditor publicly commenting on DeepSeek’s safety case plans/adherence for internal deployments. NIST",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "Internal deployment protocol",
+            "weight": 20,
+            "reasoning": "The rubric asks for implemented AI monitoring with thresholds/budgets and auditing of suspicious outputs for internal use. I found no DeepSeek-authored protocol. Public material focuses on product terms, not detailed internal monitoring. cdn.deepseek.com",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "External deployment protocol",
+            "weight": 10,
+            "reasoning": "Terms of Use prohibit dangerous purposes, but I don’t see a published flag-and-investigate pipeline, audit paths, or demonstrated controls for external settings. Cloud partners recommend their own guardrails (Azure Content Safety, Bedrock Guardrails, Vertex Model Armor), which are third-party mitigations rather than DeepSeek’s end-to-end protocol. Google Cloud+3cdn.deepseek.com+3Microsoft Azure+3",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 5
+            }
+          },
+          {
+            "name": "Plan for if an AI is caught scheming",
+            "weight": 10,
+            "reasoning": "No stated plan to publish findings, pause/switch to high-alert, tighten thresholds, or use incidents to improve monitoring. NIST",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "Training: remove scheming capabilities",
+            "weight": 3,
+            "reasoning": "No evidence DeepSeek filters/unlearns scheming-enabling knowledge by default (e.g., steganography/coordination topics) subject to a safety case. Existing evidence points to vulnerability to misuse/jailbreaks rather than targeted removal. Cisco Blogs+1",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          },
+          {
+            "name": "Training: adversarial training",
+            "weight": 3,
+            "reasoning": "*no entry in source*",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": null
+            }
+          },
+          {
+            "name": "Training: safe architecture",
+            "weight": 3,
+            "reasoning": "No public commitment to serial, interpretable bottlenecks or avoiding hidden/uninterpretable states for safety. Architecture work emphasizes performance/efficiency (MLA, MoE, multi-token prediction). arXiv",
+            "reasoning_html": "",
+            "scores": {
+              "DeepSeek": 0
+            }
+          }
+        ],
+        "category_score": {
+          "DeepSeek": 1
+        }
+      }
+    ],
+    "overall": {
+      "DeepSeek": 3
+    },
+    "metadata": {
+      "note": "Converted from PDF; missing criteria retain None scores.",
+      "missing_criteria": [
+        "Adversarial evaluation for alignment",
+        "Incident reporting",
+        "Plan for SL5",
+        "Plan for how to use AGI",
+        "Practices: isolated network",
+        "Practices: multiparty controls",
+        "Practices: secure boot",
+        "Practices: secure developers' machines",
+        "Prepare for a pivot",
+        "Removing dangerous capabilities",
+        "Safety case: accountability (misuse prevention)",
+        "Track record",
+        "Training: adversarial training"
+      ],
+      "source_pdf": "OAISI Hackathon 2025 (6).pdf"
+    }
+  }
+  
+  

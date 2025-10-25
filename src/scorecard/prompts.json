@@ -1,0 +1,66 @@
+{
+    "Risk Assessment": {
+        "weight": 27,
+        "subcategories": [
+            "Evals: domains, quality, elicitation": {
+                "description": "Categories of dangerous capabilities include offensive cyber, CBRN (especially synthetic biology), and scheming. Additionally, AI R&D capability is important since AI-boosted AI research will likely lead to rapid increases in dangerous capabilities (and diffusion of AI R&D capabilities affects AI progress outside the company). For their evals, companies should have a plan about how to interpret results — what results would allow them to rule out dangerous capabilities and what would serve as warning signs or strong indicators of dangerous capabilities.",
+                "weight": 55,
+                "official_scores": {
+                    "Anthropic": 50,
+                    "DeepMind": 50,
+                    "OpenAI": 50,
+                    "Meta": 2,
+                    "xAI": 10,
+                    "Microsoft": 2,
+                    "DeepSeek": 0
+                }
+            },
+            "Evals: accountability": {
+                "description":"Companies should make transparent that their evals are done well and how dangerous their models' capabilities are. One option is to use external evaluators: offer special model access to evaluators like CAISI, UK AISI, METR, Apollo, NNSA, and Deloitte (formerly Gryphon), such that they can do good elicitation. And let them publish their results without requiring approval. Another option is to have strong accountability for internal evals: have a (qualified, disinterested) auditor understand the company's evals and how it runs them; have the auditor publicly comment on how well it runs capability evals and what the evals show. Regardless, all else equal, companies should publish methodology and results of their evals, compare to expert human performance if relevant, and ideally publish a small random subset of questions/tasks/trajectories.",
+                "weight": 25,
+                "official_scores": {
+                    "Anthropic": 15,
+                    "DeepMind": 1,
+                    "OpenAI": 20,
+                    "Meta": 0,
+                    "xAI": 0,
+                    "Microsoft": 0,
+                    "DeepSeek": 0
+                }
+            },
+            "Adversarial evaluation for alignment": {
+                "description": "The eval should check whether the model consistently behaves well in high-stakes settings. It should especially give the model synthetic attack opportunities. It might also check that the model doesn't cooperate with attacks or steganographic messages, reports its own misbehavior, or does reasonable things if it finds that it's escaped, if the model has been trained to take good actions in such settings. (This is not reliable on its own. This is not about making an alignment-based safety case. This is for enabling and validating adversarial training, plus enabling few-shot catastrophe prevention. Alignment propensity evals are valuable more broadly, including as practice and for getting data on models' behavior and effects of alignment techniques.) (This doesn't have to be in-house.)",
+                "weight": 10,
+                "official_scores": {
+                    "Anthropic": 50,
+                    "DeepMind": 0,
+                    "OpenAI": 10,
+                    "Meta": 0,
+                    "xAI": 0,
+                    "Microsoft": 0,
+                    "DeepSeek": 0
+                }
+            },
+            "Model organisms": {
+                "description": "E.g. alignment faking. The main goal is to analyze AI scheming and determine how to decrease scheming propensity or increase honesty/corrigibility. Additionally, model organisms help enable alignment audits. AI companies should prepare to use alignment audits to catch some misaligned behavior. 25% for producing model organisms like in Alignment faking in large language models or equivalent; 25% for more model organisms; 25% for studying those model organisms—making variations, testing interventions—to analyze P(scheming) and inform interventions; 25% for preparing alignment audits.",
+                "weight": 10,
+                "official_scores": {
+                    "Anthropic": 75,
+                    "DeepMind": 10,
+                    "OpenAI": 0,
+                    "Meta": 0,
+                    "xAI": 0,
+                    "Microsoft": 0,
+                    "DeepSeek": 0
+                }
+            }
+        ],
+    },
+    "Scheming risk prevention": {
+        "weight": 21,
+        "subcategories": [
+            "Safety case: process": {
+                "description": "Companies should prepare so that once AIs might be capably scheming by default, the companies will avert risk from scheming. Two big kinds of paths are alignment, making the AIs very unlikely to be scheming, [*] and control, making it so even if AIs are scheming, safeguards make risks from scheming (especially in internal deployment) small. I believe in the short run the easiest way to greatly reduce risks from scheming primarily involves control. This involves ensuring that if internally deployed AIs attempt to catastrophically misbehave (e.g. hack the datacenter), they are very unlikely to succeed before they are caught. Demonstrating this will likely involve a control eval. The company should publish most details. (Additionally, if AIs would attempt to take catastrophically misaligned actions by default, there are safety benefits to averting harm via control and thus catching AIs red-handed rather than aligning them such that they never try. And if they wouldn't, using control gives some evidence for that.) The company should plan that if it fails to make a safety case, it will act to reduce risks rather than just deploy. Ideally the company could use evidence of risks to help spur global action to delay development of dangerous AI until improving safety. Regardless, the company should do cost-benefit analysis and deploy if and only if the benefits outweigh the costs. (The largest costs and benefits are the effects on AI risk and safety.)",
+                "weight": 25,
+                
+}

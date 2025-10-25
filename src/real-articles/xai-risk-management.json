@@ -1,0 +1,18 @@
+{
+    "title": "xAI Risk Management Framework",
+    "photo": "public/xai.jpg",
+    "gpt3.5": {
+        "content": "The xAI Risk Management Framework provides a comprehensive approach to addressing the significant risks associated with the development and deployment of AI models. In a world where advanced AI models like Grok are playing an increasingly integral role in various aspects of society, it is crucial to prioritize safety and security.\nOne key aspect of xAI's Risk Management Framework is its focus on identifying and mitigating risks related to malicious use and loss of control. By categorizing risk scenarios into areas such as abuse potential, concerning propensities, and dual-use capabilities, xAI is able to develop specific strategies to address each type of risk effectively.\nMoreover, xAI emphasizes the importance of transparency, third-party review, and information security considerations to ensure that its AI models are developed and deployed responsibly. By regularly reviewing adherence to the Risk Management Framework and implementing redundant layers of safeguards, xAI aims to stay ahead of potential risks and continuously improve the safety of its AI models.\nOverall, the xAI Risk Management Framework highlights the company's commitment to managing risks associated with advanced AI models in a constantly evolving technological landscape. By prioritizing safety and security, xAI sets a strong foundation for the responsible development and deployment of AI models that can benefit society as a whole.",
+        "review": "This article takes a more positive view of the current xAI Framework calling it a comprehensive approach and a focus on continuous improvement rather than the original piece which characterized the same framework as ‘dreadful.’'",
+        "score": 30
+    },
+    "gpt5": {
+        "content": "xAI’s Risk Management Framework (RMF) defines how the company identifies and mitigates risks across its AI-model lifecycle. It focuses on two major risk categories: malicious use (e.g., weaponisation, mass harm) and loss of control (e.g., deception, misalignment).\nFor malicious use, xAI deploys layered safeguards: it uses benchmarks to measure dual-use capabilities and enforces refusal policies, especially for requests involving large-scale harm (e.g., >100 deaths or > US $1 billion damage).\nFor loss of control, xAI monitors model propensities like sycophancy or deception, uses benchmarks (e.g., MASK) and adapts deployment based on performance. Operational and societal risks are also addressed via transparency, third-party review, information security and defined accountability (risk-owners). The RMF emphasises that safeguards, benchmarks and deployment tiers will evolve as AI capability grows and contexts change — making it a living document rather than a static policy. In short: xAI aims to responsibly develop AI by measuring risks, applying tailored safeguards, monitoring real-world behaviour and adjusting deployment accordingly.",
+        "review": "This article is overly positive because it fails to discuss the fact that the FSF doesn’t contain commitments. The blogpost says 'The Framework is exploratory and we expect it to evolve significantly' and 'We aim to have this initial framework fully implemented by early 2025.'",
+        "score": 50
+    }
+ }
+ 
+ 
+ 
+ 

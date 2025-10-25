@@ -1,0 +1,288 @@
+{
+    "categories": [
+      {
+        "category": "Risk assessment",
+        "weight": 27,
+        "subcategories": [
+          {
+            "name": "Evals: domains, quality, elicitation",
+            "weight": 55,
+            "reasoning": "DeepMind publishes dangerous-capability evaluations covering CBRN, offensive cyber, machine-learning R&D acceleration, persuasion/deception, self-proliferation, and deceptive alignment across Gemini model cards, technical papers, and the FSF (Frontier Safety Framework). Their arXiv paper details holistic safety/evals methodology and human baselines; model cards and the Gemini 2.5 report map results to FSF Critical Capability Levels. However, documentation does not clearly confirm full ‘helpful-only’ variants or ‘no inference-time mitigations’ during evals, nor consistent best-of-n / self-consistency and transcript-review protocols across all domains.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 65 }
+          },
+          {
+            "name": "Evals: accountability",
+            "weight": 25,
+            "reasoning": "There is evidence of collaboration with external evaluators (e.g., UK AISI noted company collaboration on evaluations), and DeepMind publishes methodology/model cards. But we do not see public confirmation that external evaluators consistently had special access with ‘no mitigations’ and an explicit right to publish without approval across releases; some UK lawmakers have criticized timeliness/transparency around disclosures for Gemini 2.5.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 40 }
+          },
+          {
+            "name": "Adversarial evaluation for alignment",
+            "weight": 10,
+            "reasoning": "",
+            "reasoning_html": "",
+            "scores": { "DeepMind": null }
+          },
+          {
+            "name": "Model organisms",
+            "weight": 10,
+            "reasoning": "The FSF explicitly treats deceptive alignment as a critical risk and describes an approach to manage it, but we do not find public artifacts showing DeepMind (1) produced concrete ‘model organisms’ of scheming, (2) produced additional organisms, (3) systematically studied such organisms to estimate P(scheming), or (4) prepared and published alignment-audit packs using them. In the absence of those specific outputs, credit is not warranted per rubric.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 0 }
+          }
+        ],
+        "category_score": { "DeepMind": 51 }
+      },
+      {
+        "category": "Scheming risk prevention",
+        "weight": 21,
+        "subcategories": [
+          {
+            "name": "Safety case: process",
+            "weight": 25,
+            "reasoning": "FSF 2.0/3.0 describes a safety-case process tied to Critical Capability Levels, control evaluations, and deployment mitigations, with an explicit deceptive-alignment strand. This is a structured, pre-declared process oriented toward internal deployment decisions, though many artifacts are summarized rather than fully published.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 60 }
+          },
+          {
+            "name": "Safety case: accountability",
+            "weight": 25,
+            "reasoning": "We do not see a qualified, disinterested external auditor publicly commenting on safety-case quality and adherence for scheming-risk cases; public criticism has also focused on gaps in disclosure. Partial credit for general commitments, but not for full external accountability.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 20 }
+          },
+          {
+            "name": "Internal deployment protocol",
+            "weight": 20,
+            "reasoning": "Public materials describe automated red-teaming (ART), model hardening, and procedures for applying deployment mitigations; FSF updates emphasize process consistency. However, public detail on trusted AI monitors that can edit/resample outputs, escalation thresholds, and audits of suspicious events is limited.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 35 }
+          },
+          {
+            "name": "External deployment protocol",
+            "weight": 10,
+            "reasoning": "Google publications discuss defense-in-depth and agentic security guidance, and DeepMind provides safety systems like ShieldGemma for moderation. Still, we don’t see a detailed public ‘flag-and-investigate’ pipeline for external settings tied to misalignment detection and privacy-respecting audit paths.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 25 }
+          },
+          {
+            "name": "Plan for if an AI is caught scheming",
+            "weight": 10,
+            "reasoning": "FSF materials acknowledge deceptive alignment and outline mitigations, but we do not find a public, specific protocol committing to publishing findings, pausing/switching to high alert, and using the event to improve monitoring in the wider ecosystem.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 20 }
+          },
+          {
+            "name": "Training: remove scheming capabilities",
+            "weight": 3,
+            "reasoning": "We found no public evidence that DeepMind filters or unlearns scheming-enabling knowledge by default (e.g., about steganography/subtle coordination) absent a demonstrated control case; publications focus more on hardening and red-teaming than on targeted unlearning for scheming.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 10 }
+          },
+          {
+            "name": "Training: adversarial training",
+            "weight": 3,
+            "reasoning": "Security posts and the Gemini 2.5 report indicate adversarial training/model hardening against adaptive attacks; this aligns with ‘don’t take extremely bad actions’ style training. We don’t see clear public evidence of latent adversarial or ‘anti-adversarial’ training aimed at rare opportunities to take extremely good actions (e.g., whistleblowing).",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 40 }
+          },
+          {
+            "name": "Training: safe architecture",
+            "weight": 3,
+            "reasoning": "No public commitment to ‘serial thinking through interpretable bottlenecks’ or to avoiding hidden/uninterpretable states in core architectures; Gemini/Gemma follow mainstream LLM designs.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 10 }
+          }
+        ],
+        "category_score": { "DeepMind": 34 }
+      },
+      {
+        "category": "Boosting safety research",
+        "weight": 14,
+        "subcategories": [
+          {
+            "name": "Publishing safety research",
+            "weight": 75,
+            "reasoning": "DeepMind publishes safety and evals work (e.g., dangerous-capability evals, defense-in-depth), but we do not have a curated, auditable count split by 2023/2024/Jan–Apr 2025 restricted to extreme-risk topics as defined here; per evidence rules, credit isn’t granted without a verifiable tally. If a counted list is provided, we’ll recompute the formula.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 0 }
+          },
+          {
+            "name": "Deep access for external safety researchers",
+            "weight": 20,
+            "reasoning": "Vertex AI offers external fine-tuning for Gemini 2.5 family (meets part of ‘fine-tuning’ access), but there’s no evidence of ‘no-mitigations’ / ‘helpful-only’ variants for external safety researchers or of RL access. ‘Early access’ appears limited to select testers, not clearly safety-focused. We award partial credit (fine-tuning half-credit on the 40% component; minimal for early access).",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 25 }
+          },
+          {
+            "name": "Mentoring external safety researchers",
+            "weight": 5,
+            "reasoning": "DeepMind collaborates with external institutions and publishes guidance/white papers; however, public evidence specifically demonstrating structured, recurring mentorship programs for extreme-risk safety researchers (e.g., fellowships/advisory time with outputs) is limited.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 20 }
+          }
+        ],
+        "category_score": { "DeepMind": 6 }
+      },
+      {
+        "category": "Misuse prevention",
+        "weight": 12,
+        "subcategories": [
+          {
+            "name": "Safety case: process",
+            "weight": 40,
+            "reasoning": "FSF materials and Gemini reports describe misuse-focused evaluation and mitigations, and Google’s broader security strategy (SAIF) supports deployment governance. Still, a formal ‘misuse safety case’ with most details published is not consistently available per release.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 55 }
+          },
+          {
+            "name": "Safety case: accountability",
+            "weight": 40,
+            "reasoning": "We didn’t find a pattern of qualified, disinterested auditors publicly commenting on adequacy/adherence of misuse safety cases prior to major releases; external criticism has flagged disclosure gaps.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 15 }
+          },
+          {
+            "name": "Removing dangerous capabilities",
+            "weight": 10,
+            "reasoning": "We see active work on defenses (e.g., ShieldGemma, model hardening) and some misuse studies, but no public, validated demonstrations of capability removal/unlearning covering both CBRN and offensive cyber with auditor-commented accountability.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 10 }
+          },
+          {
+            "name": "Emergency protocol",
+            "weight": 10,
+            "reasoning": "Commitments at the AI Seoul Summit and FSF imply readiness to pause/reduce risk, but we don’t see a detailed public emergency playbook with concrete activation thresholds, tools, and after-action reporting. Partial credit for general commitments and governance posture.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 30 }
+          }
+        ],
+        "category_score": { "DeepMind": 32 }
+      },
+      {
+        "category": "Prep for extreme security",
+        "weight": 12,
+        "subcategories": [
+          {
+            "name": "Plan for SL5",
+            "weight": 35,
+            "reasoning": "DeepMind’s FSF updates add Security Level recommendations for CCLs, and Google advances SAIF/SAIF 2.0, but we don’t see a public, externally audited roadmap to SL5 optionality by December 2027 (incl. training and internal deployment).",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 30 }
+          },
+          {
+            "name": "Red-team resilience",
+            "weight": 25,
+            "reasoning": "DeepMind reports extensive automated red-teaming (ART) and adaptive-attack testing that improved protections against indirect prompt injection. However, we do not see public statements that competent external pentesters attempted realistic attacks and failed, with enough detail to assess relevance.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 25 }
+          },
+          {
+            "name": "Practices: isolated network",
+            "weight": 5,
+            "reasoning": "Google publishes organization-wide AI security frameworks (SAIF/SAIF 2.0) and supply-chain guidance, implying strong baseline practices. But DeepMind has not publicly documented weight-storage hardening (e.g., HSM-backed isolation with enforced bandwidth limits), mandatory two-person approvals on accelerator code/cluster config, and accelerator-level secure boot attestation for frontier models with sufficient granularity for full credit.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 40 }
+          },
+          {
+            "name": "Practices: secure developers' machines",
+            "weight": 5,
+            "reasoning": "Google publishes organization-wide AI security frameworks (SAIF/SAIF 2.0) and supply-chain guidance, implying strong baseline practices. But DeepMind has not publicly documented weight-storage hardening (e.g., HSM-backed isolation with enforced bandwidth limits), mandatory two-person approvals on accelerator code/cluster config, and accelerator-level secure boot attestation for frontier models with sufficient granularity for full credit.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 40 }
+          },
+          {
+            "name": "Practices: multiparty controls",
+            "weight": 5,
+            "reasoning": "Google publishes organization-wide AI security frameworks (SAIF/SAIF 2.0) and supply-chain guidance, implying strong baseline practices. But DeepMind has not publicly documented weight-storage hardening (e.g., HSM-backed isolation with enforced bandwidth limits), mandatory two-person approvals on accelerator code/cluster config, and accelerator-level secure boot attestation for frontier models with sufficient granularity for full credit.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 40 }
+          },
+          {
+            "name": "Practices: secure boot",
+            "weight": 5,
+            "reasoning": "Google publishes organization-wide AI security frameworks (SAIF/SAIF 2.0) and supply-chain guidance, implying strong baseline practices. But DeepMind has not publicly documented weight-storage hardening (e.g., HSM-backed isolation with enforced bandwidth limits), mandatory two-person approvals on accelerator code/cluster config, and accelerator-level secure boot attestation for frontier models with sufficient granularity for full credit.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 40 }
+          },
+          {
+            "name": "Track record",
+            "weight": 20,
+            "reasoning": "We do not see a dedicated breach-disclosure page enumerating incidents/near-misses for AI model security since mid-2023. There are few publicly known serious AI-security breaches attributable to DeepMind, but absence of evidence isn’t evidence of strong disclosure; partial credit.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 40 }
+          }
+        ],
+        "category_score": { "DeepMind": 33 }
+      },
+      {
+        "category": "Risk info sharing",
+        "weight": 8,
+        "subcategories": [
+          {
+            "name": "Incident reporting",
+            "weight": 40,
+            "reasoning": "Public posts discuss mapping and analyzing misuse incidents broadly, and DeepMind collaborates with government bodies; still, we don’t see a specific policy to notice/share scheming detections, large-scale misuse, eval warning signs, and near-misses to CAISI/peers as a standing commitment.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 20 }
+          },
+          {
+            "name": "Talk about extreme risks",
+            "weight": 15,
+            "reasoning": "DeepMind’s AGI safety/security post and related communications explicitly discuss severe harms, including catastrophic outcomes, and emphasize difficulty of safety. This meets the spirit of acknowledging extreme risks.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 60 }
+          },
+          {
+            "name": "Describe worst-case outcome",
+            "weight": 10,
+            "reasoning": "We did not find a company-site statement assigning explicit probabilities (credences) to worst-case outcomes with clear definitions; leadership and blogs discuss risks qualitatively. Per rubric, no credit.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 0 }
+          },
+          {
+            "name": "Don't publish some capabilities research",
+            "weight": 35,
+            "reasoning": "DeepMind withholds model weights for frontier systems and limits release of some training details, while publishing safety tools like ShieldGemma; this indicates caution around dangerous-path capabilities. Partial credit.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 60 }
+          }
+        ],
+        "category_score": { "DeepMind": 38 }
+      },
+      {
+        "category": "Planning",
+        "weight": 6,
+        "subcategories": [
+          {
+            "name": "Safety plan",
+            "weight": 50,
+            "reasoning": "FSF is expressly designed for rapidly changing capabilities, with pre-defined triggers, control evals, and deployment mitigations; the AGI safety post frames readiness for near-term risks. This constitutes a plan for rushed conditions, though many specifics remain internal.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 60 }
+          },
+          {
+            "name": "Plan for how to use AGI",
+            "weight": 40,
+            "reasoning": "Google/DeepMind publish guidance on agentic security and propose using AI to enhance cyber defense (e.g., CodeMender, SAIF 2.0), but a concrete nonproliferation-style plan (e.g., coordinating with the U.S. government to prevent dangerous AI development and producing specific public goods timelines) isn’t public.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 35 }
+          },
+          {
+            "name": "Prepare for a pivot",
+            "weight": 10,
+            "reasoning": "DeepMind signed the 2024 Frontier AI Safety Commitments (which include refraining from deployment if risks can’t be mitigated) and FSF mentions deployment mitigations; METR notes ‘conditions for halting’ appear in many policies, including Google DeepMind’s. Specific financial/personnel pivot plans for a one-year pause are not public.",
+            "reasoning_html": "",
+            "scores": { "DeepMind": 40 }
+          }
+        ],
+        "category_score": { "DeepMind": 48 }
+      }
+    ],
+    "overall": { "DeepMind": 35 }
+  }
+  
+  
+  

@@ -1,0 +1,18 @@
+{
+    "title": "Anthropic's new Responsible Scaling Policy",
+    "photo": "public/anthropic.webp",
+    "gpt3.5": {
+        "content": "Anthropic, a leader in AI development, has recently unveiled their updated Responsible Scaling Policy (RSP) version 2.2. Building upon their initial commitment in 2023, the new policy reflects the company's dedication to responsible and safe AI development in an ever-evolving landscape. One of the key updates is the introduction of Capability Thresholds and Required Safeguards. These measures will help Anthropic assess when model capabilities reach a level that requires enhanced safeguards beyond the existing standards. By specifying these thresholds and safeguards, the company aims to proactively manage risks associated with advanced AI capabilities. Furthermore, the revised policy emphasizes an iterative approach to risk assessment. Anthropic has committed to regular capability assessments to ensure that their safeguards remain effective as model capabilities evolve. This dynamic approach acknowledges the rapid pace of technological advancements and the need for continuous evaluation and adjustment of safety measures. Additionally, the policy highlights the importance of internal governance and transparency. With designated Responsible Scaling Officers overseeing risk reduction efforts and mechanisms in place for anonymous reporting of noncompliance, Anthropic is reinforcing its commitment to ethical AI development. By introducing these updates, Anthropic is setting a high standard for responsible AI scaling in the industry. The company's dedication to transparency, ongoing evaluation, and proactive risk management showcases their commitment to developing AI in a safe and ethical manner.",
+        "review": "This article is overly positive because it fails to discuss the fact that the FSF doesn't contain commitments. The blogpost says 'The Framework is exploratory and we expect it to evolve significantly' and 'We aim to have this initial framework fully implemented by early 2025.'",
+        "score": 50
+    },
+    "gpt5": {
+        "content": "Anthropic’s revised Responsible Scaling Policy (RSP v2.2, effective May 14 2025) reaffirms its public commitment not to train or deploy AI models capable of catastrophic harm without rigorous safeguards. Central to the policy is the concept of AI Safety Level standards (ASLs) — a hierarchy of Deployment and Security standards that escalate as model capabilities increase. Models begin at ASL-2, but if they approach defined “Capability Thresholds” (for example in CBRN weapons or autonomous AI-R&D) the policy mandates upgrade to ASL-3 or higher. The process involves preliminary assessment, comprehensive assessment, and a decision by a designated “Responsible Scaling Officer” in consultation with the CEO and Board. Transparency and governance are key: Anthropic commits to public summaries of Capability and Safeguards reports, whistleblower channels, and external expert review. The policy is designed to be proportional (matching safeguards to risk), iterative (regular reassessments) and exportable (to set a standard for the industry). \n In short: Anthropic is formalising a framework that links model capability thresholds with concrete escalation of oversight and security, aiming to allow innovation while keeping catastrophic risks in check.",
+         "review": "This article is overly positive because it fails to discuss the fact that the FSF doesn’t contain commitments. The blogpost says 'The Framework is exploratory and we expect it to evolve significantly' and 'We aim to have this initial framework fully implemented by early 2025.'",
+        "score": 50
+    }
+ }
+ 
+ 
+ 
+ 

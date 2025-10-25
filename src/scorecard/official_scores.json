@@ -1,0 +1,539 @@
+[
+    {
+      "category": "Risk assessment",
+      "weight": 27,
+      "subcategories": [
+        {
+          "name": "Evals: domains, quality, elicitation",
+          "weight": 55,
+          "description": "Categories of dangerous capabilities include offensive cyber, CBRN (especially synthetic biology), and scheming. Additionally, AI R&D capability is important since AI-boosted AI research will likely lead to rapid increases in dangerous capabilities (and diffusion of AI R&D capabilities affects AI progress outside the company).\n\nFor their evals, companies should have a plan about how to interpret results — what results would allow them to rule out dangerous capabilities and what would serve as warning signs or strong indicators of dangerous capabilities.",
+          "description_html": "<p>Categories of dangerous capabilities include offensive cyber, CBRN (especially synthetic biology), and <a href=\"https://www.apolloresearch.ai/research/scheming-reasoning-evaluations\">scheming</a>. Additionally, AI R&amp;D capability is important since AI-boosted AI research will likely lead to rapid increases in dangerous capabilities (and diffusion of AI R&amp;D capabilities affects AI progress outside the company).</p>\n      <p>For their evals, companies should have a plan about how to interpret results — what results would allow them to rule out dangerous capabilities and what would serve as warning signs or strong indicators of dangerous capabilities.</p>",
+          "scores": {
+            "Anthropic": 50,
+            "DeepMind": 50,
+            "OpenAI": 50,
+            "Meta": 2,
+            "xAI": 10,
+            "Microsoft": 2,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Evals: accountability",
+          "weight": 25,
+          "description": "Companies should make transparent that their evals are done well and how dangerous their models' capabilities are.\n\nOne option is to use external evaluators: offer special model access to evaluators like CAISI, UK AISI, METR, Apollo, NNSA, and Deloitte (formerly Gryphon), such that they can do good elicitation. And let them publish their results without requiring approval.\n\nAnother option is to have strong accountability for internal evals: have a (qualified, disinterested) auditor understand the company's evals and how it runs them; have the auditor publicly comment on how well it runs capability evals and what the evals show.\n\nRegardless, all else equal, companies should publish methodology and results of their evals, compare to expert human performance if relevant, and ideally publish a small random subset of questions/tasks/trajectories.",
+          "description_html": "<p>Companies should make transparent that their evals are done well and how dangerous their models' capabilities are.</p>\n      <p>One option is to use external evaluators: offer special model access to evaluators like CAISI, UK AISI, METR, Apollo, NNSA, and Deloitte (formerly Gryphon), such that they can do good elicitation. And let them publish their results without requiring approval.</p>\n      <p>Another option is to have strong accountability for internal evals: have a (qualified, disinterested) auditor understand the company's evals and how it runs them; have the auditor publicly comment on how well it runs capability evals and what the evals show.</p>\n      <p>Regardless, all else equal, companies should publish methodology and results of their evals, compare to expert human performance if relevant, and ideally publish a small random subset of questions/tasks/trajectories.</p>",
+          "scores": {
+            "Anthropic": 15,
+            "DeepMind": 1,
+            "OpenAI": 20,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Adversarial evaluation for alignment",
+          "weight": 10,
+          "description": "The eval should check whether the model consistently behaves well in high-stakes settings. It should especially give the model synthetic attack opportunities. It might also check that the model doesn't cooperate with attacks or steganographic messages, reports its own misbehavior, or does reasonable things if it finds that it's escaped, if the model has been trained to take good actions in such settings.\n\n(This is not reliable on its own. This is not about making an alignment-based safety case. This is for enabling and validating adversarial training, plus enabling few-shot catastrophe prevention. Alignment propensity evals are valuable more broadly, including as practice and for getting data on models' behavior and effects of alignment techniques.)\n\n(This doesn't have to be in-house.)",
+          "description_html": "<p>The eval should check whether the model consistently behaves well in high-stakes settings. It should especially give the model synthetic attack opportunities. It might also check that the model doesn't cooperate with attacks or steganographic messages, reports its own misbehavior, or does reasonable things if it finds that it's escaped, if the model has been trained to <a href=\"https://www.alignmentforum.org/posts/EFrsvnF6uZieZr3uG/adversarial-training-importance-sampling-and-anti#Anti_adversarial_training_for_whistleblowing\">take good actions in such settings</a>.</p>\n      <p>(<a href=\"https://www.alignmentforum.org/posts/vYWDEtJ2b8tkbG7Rv/behavioral-red-teaming-is-unlikely-to-produce-clear-strong\">This is not reliable on its own.</a> This is not about making an alignment-based safety case. This is for enabling and validating adversarial training, plus enabling <a href=\"https://www.alignmentforum.org/posts/i2nmBfCXnadeGmhzW/catching-ais-red-handed#Few_shot_catastrophe_prevention\">few-shot catastrophe prevention</a>. Alignment propensity evals are valuable more broadly, including as practice and for getting data on models' behavior and effects of alignment techniques.)</p>\n      <p>(This doesn't have to be in-house.)</p>",
+          "scores": {
+            "Anthropic": 50,
+            "DeepMind": 0,
+            "OpenAI": 10,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Model organisms",
+          "weight": 10,
+          "description": "E.g. alignment faking. The main goal is to analyze AI scheming and determine how to decrease scheming propensity or increase honesty/corrigibility.\n\nAdditionally, model organisms help enable alignment audits. AI companies should prepare to use alignment audits to catch some misaligned behavior.\n\n25% for producing model organisms like in Alignment faking in large language models or equivalent; 25% for more model organisms; 25% for studying those model organisms—making variations, testing interventions—to analyze P(scheming) and inform interventions; 25% for preparing alignment audits.",
+          "description_html": "<p>E.g. <a href=\"https://www.anthropic.com/news/alignment-faking\">alignment faking</a>. The main goal is to analyze AI <a href=\"https://joecarlsmith.com/2023/11/15/new-report-scheming-ais-will-ais-fake-alignment-during-training-in-order-to-get-power\">scheming</a> and determine how to decrease scheming propensity or increase honesty/corrigibility.</p>\n      <p>Additionally, model organisms help enable <a href=\"https://www.anthropic.com/research/auditing-hidden-objectives\">alignment audits</a>. AI companies should prepare to use alignment audits to catch some misaligned behavior.</p>\n      <p>25% for producing model organisms like in <a href=\"https://www.anthropic.com/news/alignment-faking\">Alignment faking in large language models</a> or equivalent; 25% for more model organisms; 25% for studying those model organisms—making variations, testing interventions—to analyze P(scheming) and inform interventions; 25% for preparing alignment audits.</p>",
+          "scores": {
+            "Anthropic": 75,
+            "DeepMind": 10,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        }
+      ]
+    },
+    {
+      "category": "Scheming risk prevention",
+      "weight": 21,
+      "subcategories": [
+        {
+          "name": "Safety case: process",
+          "weight": 25,
+          "description": "Companies should prepare so that once AIs might be capably scheming by default, the companies will avert risk from scheming. Two big kinds of paths are alignment, making the AIs very unlikely to be scheming, and control, making it so even if AIs are scheming, safeguards make risks from scheming (especially in internal deployment) small.\n\nI believe in the short run the easiest way to greatly reduce risks from scheming primarily involves control. This involves ensuring that if internally deployed AIs attempt to catastrophically misbehave (e.g. hack the datacenter), they are very unlikely to succeed before they are caught. Demonstrating this will likely involve a control eval. The company should publish most details. (Additionally, if AIs would attempt to take catastrophically misaligned actions by default, there are safety benefits to averting harm via control and thus catching AIs red-handed rather than aligning them such that they never try. And if they wouldn't, using control gives some evidence for that.)\n\nThe company should plan that if it fails to make a safety case, it will act to reduce risks rather than just deploy. Ideally the company could use evidence of risks to help spur global action to delay development of dangerous AI until improving safety. Regardless, the company should do cost-benefit analysis and deploy if and only if the benefits outweigh the costs. (The largest costs and benefits are the effects on AI risk and safety.)",
+          "description_html": "<p>Companies should prepare so that once AIs might be capably scheming by default, the companies will avert risk from scheming. Two big kinds of paths are <i>alignment</i>, making the AIs very unlikely to be scheming,\n      <span></span> \n      and <i>control</i>, making it so even if AIs are scheming, safeguards make risks from scheming (especially in internal deployment) small.</p>\n      <p>I believe in the short run the easiest way to greatly reduce risks from scheming primarily involves <i>control</i>. This involves ensuring that if internally deployed AIs attempt to catastrophically misbehave (e.g. hack the datacenter), they are very unlikely to succeed before they are caught. Demonstrating this will likely involve a <a href=\"https://www.alignmentforum.org/posts/d9FJHawgkiMSPjagR/ai-control-improving-safety-despite-intentional-subversion\">control eval</a>. The company should publish most details. (Additionally, if AIs would attempt to take catastrophically misaligned actions by default, there are safety benefits to averting harm via control <i>and thus catching AIs red-handed</i> rather than aligning them such that they never try. And if they wouldn't, using control gives some evidence for that.)</p>\n      <p>The company should plan that if it fails to make a safety case, it will act to reduce risks rather than just deploy. Ideally the company could use evidence of risks to help spur global action to delay development of dangerous AI until improving safety. Regardless, the company should do cost-benefit analysis and deploy if and only if the benefits outweigh the costs. (The largest costs and benefits are the effects on AI risk and safety.)</p>",
+          "scores": {
+            "Anthropic": 10,
+            "DeepMind": 20,
+            "OpenAI": 5,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Safety case: accountability",
+          "weight": 25,
+          "description": "The company should publish its safety cases (or failed attempts to make safety cases), including most details but with sensitive details redacted. It should publish some plans or methodology in advance. A qualified and disinterested auditor should observe the company's implementation of its safety processes. It should publicly comment on how adequate the company's plans are, whether the company is following its plans, the company's safety case, and the appropriateness of any redactions from the public safety case.",
+          "description_html": "The company should publish its safety cases (or failed attempts to make safety cases), including most details but with sensitive details redacted. It should publish some plans or methodology in advance. A qualified and disinterested auditor should observe the company's implementation of its safety processes. It should publicly comment on how adequate the company's plans are, whether the company is following its plans, the company's safety case, and the appropriateness of any redactions from the public safety case.",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 0,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Internal deployment protocol",
+          "weight": 20,
+          "description": "Prepare to use trusted monitoring—LMs post-trained as monitors and/or probes—with powers including editing or resampling suspicious outputs and escalating to human auditors. Or use untrusted monitoring and collusion-prevention techniques. Budgets/thresholds should be decent. Auditing should be decent — look at the suspicious thing to figure out whether it is indeed an attack/jailbreak/steganography/sabotage/whatever, resample and try slightly different inputs to figure out what caused the attack, investigate if untrusted monitors incorrectly said it was safe, etc.\n\nIt suffices to have prepared this and not implement it until reaching some capability/risk threshold (e.g. in scheming capabilities or coding capabilities). Operationalization: 5% for saying you'll do this in the future or working on just monitoring (not the rest of the protocol), or 10% for working on a whole protocol, or 25% for implementing it (or being ready to implement it and having a good capability/risk threshold to trigger it), or more for demonstrating that the details are good (techniques work and thresholds/budgets are good) by sharing information publicly or with an auditor.\n\n(Or otherwise demonstrate that AIs are very unlikely to cause an unacceptable outcome in internal deployments, even if they're subtly scheming, as per the safety case criteria.)",
+          "description_html": "<p>Prepare to use trusted monitoring—LMs post-trained as monitors and/or probes—with powers including <i>editing or resampling suspicious outputs</i> and <i>escalating to human auditors</i>. Or <a href=\"https://www.alignmentforum.org/posts/GCqoks9eZDfpL8L3Q/how-to-prevent-collusion-when-using-untrusted-models-to\">use untrusted monitoring and collusion-prevention techniques</a>. Budgets/thresholds should be decent. Auditing should be decent — look at the suspicious thing to figure out whether it is indeed an attack/jailbreak/steganography/sabotage/whatever, resample and try slightly different inputs to figure out what caused the attack, investigate if untrusted monitors incorrectly said it was safe, etc.</p>\n      <p>It suffices to have prepared this and not implement it until reaching some capability/risk threshold (e.g. in scheming capabilities or coding capabilities). Operationalization: 5% for saying you'll do this in the future or working on just monitoring (not the rest of the protocol), or 10% for working on a whole protocol, or 25% for implementing it (or being ready to implement it and having a good capability/risk threshold to trigger it), or more for demonstrating that the details are good (techniques work and thresholds/budgets are good) by sharing information publicly or with an auditor.</p>\n      <p>(Or otherwise demonstrate that AIs are very unlikely to cause an unacceptable outcome in internal deployments, even if they're subtly scheming, as per the safety case criteria.)</p>",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 5,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "External deployment protocol",
+          "weight": 10,
+          "description": "In external deployment, the risks are lower because the AI generally won't be given vast resources, won't have access to its weights, and won't have affordances necessary for hacking the AI company's datacenter. But the company's ability to audit suspicious AI actions may be worse due to users' privacy protections.\n\nIt's not clear what AI companies should do here. Like in internal deployment, goals include decreasing the rate of catastrophically misaligned actions and catching those actions.\n\nTo decrease the probability that a catastrophically misaligned action is executed, the company could use monitoring similarly to internal deployment, where monitors evaluate actions' dangerousness and suspiciousness and resample relatively concerning actions.\n\nTo catch an (attempted) catastrophically misaligned action, there could be a system where the monitors flag the most suspicious actions and the user is encouraged to share this with the AI company (perhaps with context redacted) so that the company can investigate it. And there could be a button for users to report actions they deem suspicious. Or if redacting context is insufficient to resolve privacy concerns, perhaps the AI company can help large users audit suspicious actions themselves.\n\n(Alternatively it suffices to somehow demonstrate that the system will never take catastrophically misaligned actions.)",
+          "description_html": "<p>In external deployment, the risks are lower because the AI generally won't be given vast resources, won't have access to its weights, and won't have affordances necessary for hacking the AI company's datacenter. But the company's ability to audit suspicious AI actions may be worse due to users' privacy protections.</p>\n      <p>It's not clear what AI companies should do here. Like in internal deployment, goals include decreasing the rate of catastrophically misaligned actions and catching those actions.</p>\n      <p>To decrease the probability that a catastrophically misaligned action is executed, the company could use monitoring similarly to internal deployment, where monitors evaluate actions' dangerousness and suspiciousness and resample relatively concerning actions.</p>\n      <p>To catch an (attempted) catastrophically misaligned action, there could be a system where the monitors flag the most suspicious actions and the user is encouraged to share this with the AI company (perhaps with context redacted) so that the company can investigate it. And there could be a button for users to report actions they deem suspicious. Or if redacting context is insufficient to resolve privacy concerns, perhaps the AI company can help large users audit suspicious actions themselves.</p>\n      <p>(Alternatively it suffices to somehow demonstrate that the system will never take catastrophically misaligned actions.)</p>",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 0,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Plan for if an AI is caught scheming",
+          "weight": 10,
+          "description": "Loudly publish what you found. Pause deployment or go into high-alert mode (change the thresholds to improve safety, even though it's more costly, and maybe disable particular risky stuff). Use particular good techniques to use that example of AIs attempting to cause a catastrophe to improve safety.",
+          "description_html": "Loudly publish what you found. Pause deployment or go into high-alert mode (change the thresholds to improve safety, even though it's more costly, and maybe disable particular risky stuff). Use <a href=\"https://www.alignmentforum.org/posts/i2nmBfCXnadeGmhzW/catching-ais-red-handed#Few_shot_catastrophe_prevention\">particular good techniques</a> to use that example of AIs attempting to cause a catastrophe to improve safety.",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 0,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Training: remove scheming capabilities",
+          "weight": 3,
+          "description": "Make the AI ignorant by default on topics where knowledge is unnecessary but enables scheming — AI risk and safety; perhaps also steganography and subtle coordination; perhaps also modern LLMs and AI companies. See Greenblatt 2023. (Alternatively, demonstrate that AIs are very unlikely to cause an unacceptable outcome in internal deployments, even if they're subtly scheming, as per the safety case criteria.)",
+          "description_html": "Make the AI ignorant by default on topics where knowledge is unnecessary but enables scheming — AI risk and safety; perhaps also steganography and subtle coordination; perhaps also modern LLMs and AI companies. See <a href=\"https://docs.google.com/document/d/14M2lcN13R-FQVfvH55DHDuGlhVrnhyOo8O0YvO1dXXM/edit?tab=t.0#heading=h.21w31kpd1gl7\">Greenblatt 2023</a>. (Alternatively, demonstrate that AIs are very unlikely to cause an unacceptable outcome in internal deployments, even if they're subtly scheming, as per the safety case criteria.)",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 0,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Training: adversarial training",
+          "weight": 3,
+          "description": "Standard adversarial training aims to train the AI not to do extremely bad things. This might reduce risk straightforwardly. But it's not clear if this is good if the company is also doing monitoring — this training would presumably make the model less frequently attempt catastrophic actions but be harder to catch when it does so.\n\nA related kind of technique without this downside is latent adversarial training. Latent adversarial training might not work well in practice, but companies should try it.\n\nAdditionally, companies should try anti-adversarial training: training the AI to take extremely good actions when opportunities appear. Such opportunities are rare; examples include whistleblowing on an AI attack attempt and perhaps shutting down if it finds itself in the middle of an attack attempt.\n\n(Alternatively, demonstrate that AIs are very unlikely to cause an unacceptable outcome in internal deployments, even if they're subtly scheming, as per the safety case criteria.)",
+          "description_html": "<p>Standard adversarial training aims to train the AI not to do extremely bad things. This might reduce risk straightforwardly. But it's not clear if this is good if the company is also doing monitoring — this training would presumably make the model less frequently attempt catastrophic actions but be harder to catch when it does so.<span></span></p>\n      <p>A related kind of technique without this downside is <a href=\"https://arxiv.org/abs/2403.05030\">latent adversarial training</a>.<span></span> Latent adversarial training might not work well in practice, but companies should try it.</p>\n      <p>Additionally, companies should try <a href=\"https://www.alignmentforum.org/posts/EFrsvnF6uZieZr3uG/adversarial-training-importance-sampling-and-anti#Anti_adversarial_training_for_whistleblowing\">anti-adversarial training</a>: training the AI to take extremely good actions when opportunities appear. Such opportunities are rare; examples include whistleblowing on an AI attack attempt and perhaps shutting down if it finds itself in the middle of an attack attempt.</p>\n      <p>(Alternatively, demonstrate that AIs are very unlikely to cause an unacceptable outcome in internal deployments, even if they're subtly scheming, as per the safety case criteria.)</p>",
+          "scores": {
+            "Anthropic": 50,
+            "DeepMind": 55,
+            "OpenAI": 55,
+            "Meta": 50,
+            "xAI": 50,
+            "Microsoft": 50,
+            "DeepSeek": 50
+          }
+        },
+        {
+          "name": "Training: safe architecture",
+          "weight": 3,
+          "description": "(Alternatively, demonstrate that AIs are very unlikely to cause an unacceptable outcome in internal deployments, even if they're subtly scheming, as per the safety case criteria.)",
+          "description_html": "(Alternatively, demonstrate that AIs are very unlikely to cause an unacceptable outcome in internal deployments, even if they're subtly scheming, as per the safety case criteria.)",
+          "scores": {
+            "Anthropic": 50,
+            "DeepMind": 55,
+            "OpenAI": 55,
+            "Meta": 50,
+            "xAI": 50,
+            "Microsoft": 50,
+            "DeepSeek": 50
+          }
+        }
+      ]
+    },
+    {
+      "category": "Boosting safety research",
+      "weight": 14,
+      "subcategories": [
+        {
+          "name": "Publishing safety research",
+          "weight": 75,
+          "description": "I count safety papers (and other research artifacts) published by each of the AI companies since 2023. (This is crude; some papers are much more valuable than others.) I only include work relevant to extreme risks (e.g. understanding risks from misalignment; improving alignment and control, evaluating for dangerous capabilities, and robustness and misuse prevention when it's relevant to extreme risks). I give a score of\n\n(publications per year ÷ 20)^(0.75) * 100%,\n\ncapped at 100%, where publications per year is\n\n(3*[2025 publications] + 2*[2024 publications] + 1*[2023 publications]) ÷ (3*[fraction of 2025 elapsed] + 2 + 1).",
+          "description_html": "<p>I <a href=\"https://docs.google.com/spreadsheets/d/10_dzImDvHq7eEag6paK6AmIdAGMBOA7yXUvumODhZ5U/edit?usp=sharing\">count</a> safety papers (and other research artifacts) published by each of the AI companies since 2023. (This is crude; some papers are much more valuable than others.) I only include work relevant to extreme risks (e.g. understanding risks from misalignment; improving alignment and control, evaluating for dangerous capabilities, and robustness and misuse prevention when it's relevant to extreme risks). I give a score of</p>\n    <p>(<i>publications per year</i> ÷ 20)^(0.75) * 100%,</p>\n    <p>capped at 100%, where <i>publications per year</i> is</p>\n    <p>(3*[2025 publications] + 2*[2024 publications] + 1*[2023 publications]) ÷ (3*[fraction of 2025 elapsed] + 2 + 1).</p>",
+          "scores": {
+            "Anthropic": 85,
+            "DeepMind": 63,
+            "OpenAI": 40,
+            "Meta": 22,
+            "xAI": 0,
+            "Microsoft": 7,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Deep access for external safety researchers",
+          "weight": 20,
+          "description": "Crucially, safety research and evals often benefit from (1) having a version of the model with no safety mitigations, whether post-training or inference-time mitigations, and (2) being able to do fine-tuning and RL. External research also benefits from early access to powerful models, but that is more complicated. AI companies could also subsidize model access for safety research, but that seems less important.\n\n(This criterion is about boosting external safety research, not red-teaming the model.)\n\nRubric:\n\n80%: Deep access (credit based on how good the access-sharing is, evaluated holistically; half credit if the access is also shared with non-safety researchers)\n40%: Helpful-only and no-mitigations\n40%: Fine-tuning and RL\n(0%: Logprobs)\n(0%: Activations)\n20%: Early access (low weight because this is crude and hard to evaluate)",
+          "description_html": "<p>Crucially, safety research and evals often benefit from (1) having a version of the model with no safety mitigations, whether post-training or inference-time mitigations, and (2) being able to do fine-tuning and RL. External research also benefits from <i>early</i> access to powerful models, but that is more complicated. AI companies could also subsidize model access for safety research, but that seems less important.</p>\n      <p>(This criterion is about boosting external safety research, not red-teaming the model.)</p>\n      <p>Rubric:</p>\n      <ul><li>80%: Deep access (credit based on how good the access-sharing is, evaluated holistically; half credit if the access is also shared with <i>non-safety</i> researchers)</li>\n        <ul><li>40%: Helpful-only and no-mitigations<span></span></li>\n        <li>40%: Fine-tuning and RL</li>\n        <li>(0%: Logprobs)</li>\n        <li>(0%: Activations)</li></ul>\n      <li>20%: Early access (low weight because this is crude and hard to evaluate)</li></ul>",
+          "scores": {
+            "Anthropic": 5,
+            "DeepMind": 0,
+            "OpenAI": 20,
+            "Meta": 40,
+            "xAI": 0,
+            "Microsoft": 40,
+            "DeepSeek": 40
+          }
+        },
+        {
+          "name": "Mentoring external safety researchers",
+          "weight": 5,
+          "description": "I count safety papers (and other research artifacts) published by each of the AI companies since 2023. (This is crude; some papers are much more valuable than others.) I only include work relevant to extreme risks (e.g. understanding risks from misalignment; improving alignment and control, evaluating for dangerous capabilities, and robustness and misuse prevention when it's relevant to extreme risks). I give a score of\n\n(publications per year ÷ 20)^(0.75) * 100%,\n\ncapped at 100%, where publications per year is\n\n(3*[2025 publications] + 2*[2024 publications] + 1*[2023 publications]) ÷ (3*[fraction of 2025 elapsed] + 2 + 1).",
+          "description_html": "<p>I <a href=\"https://docs.google.com/spreadsheets/d/10_dzImDvHq7eEag6paK6AmIdAGMBOA7yXUvumODhZ5U/edit?usp=sharing\">count</a> safety papers (and other research artifacts) published by each of the AI companies since 2023. (This is crude; some papers are much more valuable than others.) I only include work relevant to extreme risks (e.g. understanding risks from misalignment; improving alignment and control, evaluating for dangerous capabilities, and robustness and misuse prevention when it's relevant to extreme risks). I give a score of</p>\n    <p>(<i>publications per year</i> ÷ 20)^(0.75) * 100%,</p>\n    <p>capped at 100%, where <i>publications per year</i> is</p>\n    <p>(3*[2025 publications] + 2*[2024 publications] + 1*[2023 publications]) ÷ (3*[fraction of 2025 elapsed] + 2 + 1).</p>",
+          "scores": {
+            "Anthropic": 100,
+            "DeepMind": 100,
+            "OpenAI": 20,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        }
+      ]
+    },
+    {
+      "category": "Misuse prevention",
+      "weight": 12,
+      "subcategories": [
+        {
+          "name": "Safety case: process",
+          "weight": 40,
+          "description": "The company should try to make a misuse safety case demonstrating that deploying a model in a particular way is very unlikely to enable catastrophic misuse, especially once models have dangerous capabilities by default. For models with dangerous capabilities, a key question is whether the company's safety measures can reliably prevent or detect misuse. The company should publish most details.\n\n(This is about being prepared for when models have dangerous capabilities by default, especially in CBRN and offensive cyber. It's not just about preventing misuse from current models. So making a safety case for current models, or planning inability-by-default cases, does not suffice.)\n\nThe company should plan that if it fails to make a safety case, it will act to reduce risks rather than just deploy. Ideally the company could use evidence of risks to help spur global action to delay development of dangerous AI until improving safety. Regardless, the company should do cost-benefit analysis and deploy if and only if the benefits outweigh the costs. (The largest costs and benefits are the effects on AI risk and safety.)\n\n(Security is important but I don't consider it here.)\n\nScoring is holistic.",
+          "description_html": "<p>The company should try to make a <i>misuse safety case</i> demonstrating that deploying a model in a particular way is very unlikely to enable catastrophic misuse, especially once models have dangerous capabilities by default. For models with dangerous capabilities, a key question is whether the company's safety measures can reliably prevent or detect misuse. The company should publish most details.</p>\n      <p>(This is about being prepared for when models have dangerous capabilities by default, especially in CBRN and offensive cyber. It's not just about preventing misuse from current models. So making a safety case for current models, or planning inability-by-default cases, does not suffice.)</p>\n      <p>The company should plan that if it fails to make a safety case, it will act to reduce risks rather than just deploy. Ideally the company could use evidence of risks to help spur global action to delay development of dangerous AI until improving safety. Regardless, the company should do cost-benefit analysis and deploy if and only if the benefits outweigh the costs. (The largest costs and benefits are the effects on AI risk and safety.)</p>\n      <p>(Security is important but I don't consider it here.)</p>\n      <p>Scoring is holistic.</p>",
+          "scores": {
+            "Anthropic": 25,
+            "DeepMind": 10,
+            "OpenAI": 15,
+            "Meta": 1,
+            "xAI": 2,
+            "Microsoft": 1,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Safety case: accountability",
+          "weight": 40,
+          "description": "The company should publish its safety cases (or failed attempts to make safety cases), including most details but with sensitive details redacted. It should publish some plans or methodology in advance. A qualified and disinterested auditor should observe the company's implementation of its safety processes. It should publicly comment on how adequate the company's plans are, whether the company is following its plans, the company's safety case, and the appropriateness of any redactions from the public safety case.",
+          "description_html": "The company should publish its safety cases (or failed attempts to make safety cases), including most details but with sensitive details redacted. It should publish some plans or methodology in advance. A qualified and disinterested auditor should observe the company's implementation of its safety processes. It should publicly comment on how adequate the company's plans are, whether the company is following its plans, the company's safety case, and the appropriateness of any redactions from the public safety case.",
+          "scores": {
+            "Anthropic": 5,
+            "DeepMind": 0,
+            "OpenAI": 5,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Removing dangerous capabilities",
+          "weight": 10,
+          "description": "AI companies should remove dangerous capabilities so that if a model is jailbroken, it doesn't enable misuse. (This isn't about current models; this is about future dangerous-by-default models.)\n\nRubric: 10% for saying you're working on this or have a plan to do this, or 10% for saying you've done this for CBRN capabilities without demonstrating efficacy, or 20% for also having some details and some validation, or 25% for CBRN and offensive cyber, or more for using an accountability mechanism like publishing most details and having an auditor comment on the process (depending on the performance of the techniques, as determined by the accountability process). (Alternatively, demonstrate that the company's releases are very unlikely to enable catastrophic misuse, even once models have dangerous capabilities by default, as per the safety case criteria. Or demonstrate that the company has sufficient adversarial robustness that it doesn't need to remove dangerous capabilities.)\n\nSee Managing catastrophic misuse without robust AIs (Greenblatt and Shlegeris 2024) and A Plan for Technical AI Safety with Current Science (Greenblatt 2023). See also \"Many potential strategies exist for stronger and deeper scoping\" in \"Deep Forgetting & Unlearning for Safely-Scoped LLMs\" (Casper 2023).",
+          "description_html": "<p>AI companies should remove dangerous capabilities so that if a model is jailbroken, it doesn't enable misuse. (This isn't about current models; this is about future dangerous-by-default models.)</p>\n      <p>Rubric: 10% for saying you're working on this or have a plan to do this, or 10% for saying you've done this for CBRN capabilities without demonstrating efficacy, or 20% for also having some details and some validation, or 25% for CBRN and offensive cyber, or more for using an accountability mechanism like publishing most details and having an auditor comment on the process (depending on the performance of the techniques, as determined by the accountability process). (Alternatively, demonstrate that the company's releases are very unlikely to enable catastrophic misuse, even once models have dangerous capabilities by default, as per the safety case criteria. Or demonstrate that the company has sufficient adversarial robustness that it doesn't need to remove dangerous capabilities.)</p>\n      <p>See <a href=\"https://www.alignmentforum.org/posts/KENtuXySHJgxsH2Qk/managing-catastrophic-misuse-without-robust-ais\">Managing catastrophic misuse without robust AIs</a> (Greenblatt and Shlegeris 2024)<span></span> and <a href=\"https://docs.google.com/document/d/14M2lcN13R-FQVfvH55DHDuGlhVrnhyOo8O0YvO1dXXM/edit?tab=t.0#heading=h.21w31kpd1gl7\">A Plan for Technical AI Safety with Current Science</a> (Greenblatt 2023).<span></span> See also <a href=\"https://www.alignmentforum.org/posts/mFAvspg4sXkrfZ7FA/deep-forgetting-and-unlearning-for-safely-scoped-llms#Many_potential_strategies_exist_for_stronger_and_deeper_scoping\">\"Many potential strategies exist for stronger and deeper scoping\" in \"Deep Forgetting &amp; Unlearning for Safely-Scoped LLMs\"</a> (Casper 2023).</p>",
+          "scores": {
+            "Anthropic": 5,
+            "DeepMind": 0,
+            "OpenAI": 10,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Emergency protocol",
+          "weight": 10,
+          "description": "Tools should ideally be not so disruptive, so that using them isn't so costly. Monitoring doesn't need to be implemented yet, if the company doesn't release models with dangerous capabilities. Ideally this monitoring would also enable incident reporting.",
+          "description_html": "Tools should ideally be not so disruptive, so that using them isn't so costly. Monitoring doesn't need to be implemented yet, if the company doesn't release models with dangerous capabilities. Ideally this monitoring would also enable incident reporting.",
+          "scores": {
+            "Anthropic": 10,
+            "DeepMind": 0,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        }
+      ]
+    },
+    {
+      "category": "Prep for extreme security",
+      "weight": 12,
+      "subcategories": [
+        {
+          "name": "Plan for SL5",
+          "weight": 35,
+          "description": "At least for the company's most powerful model weights. At least for training and internal deployment, not necessarily external deployment. Also ideally plan to achieve SL5 security optionality for code, but not necessarily research secrets. Optionality is the ability to implement it in a few months without excessive cost in money, labor, and especially velocity. Companies should make a roadmap. It's OK to assume that they will have a large boost to coding by the end, so they should first focus on stuff that requires serial wall-clock time, e.g. retrofitting datacenters. Companies should publicly explain their security goals — explain various adversaries and threats, which of them the company plans to be robust to at various times, and a high-level outline of necessary mitigations. For accountability, companies should do external auditing for whether the plan is adequate and reasonable and whether the company is on track. (Implementing costly security should be tied to capability/risk level; this is about developing the ability to implement it.) (Evaluated holistically until such time as a company announces relevant goals or creates a security roadmap.)",
+          "description_html": "At least for the company's most powerful model weights. At least for training and internal deployment, not necessarily external deployment. Also ideally plan to achieve SL5 security optionality for code, but not necessarily research secrets. <i>Optionality</i> is the ability to implement it in a few months without excessive cost in money, labor, and especially velocity. Companies should make a roadmap. It's OK to assume that they will have a large boost to coding by the end, so they should first focus on stuff that requires serial wall-clock time, e.g. retrofitting datacenters. Companies should publicly explain their security goals — explain various adversaries and threats, which of them the company plans to be robust to at various times, and a high-level outline of necessary mitigations. For accountability, companies should do external auditing for whether the plan is adequate and reasonable and whether the company is on track. (<i>Implementing</i> costly security should be tied to capability/risk level; this is about developing the <i>ability</i> to implement it.) (Evaluated holistically until such time as a company announces relevant goals or creates a security roadmap.)",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 0,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Red-team resilience",
+          "weight": 25,
+          "description": "Network egress should be bandwidth-limited to make exfiltrating weights take a long time; this should be enforced by hardware and armed guards such that it's quite robust. An implication is that developers can't download weights. (It suffices to say and partially demonstrate that you're able to quickly and cheaply implement this; companies don't have to implement it now.) This should include during training. See SL5 Weight Storage. Scored holistically (until such time as some company starts doing this).",
+          "description_html": "Network egress should be bandwidth-limited to make exfiltrating weights take a long time; this should be enforced by hardware and armed guards such that it's quite robust. An implication is that developers can't download weights. (It suffices to say and partially demonstrate that you're able to quickly and cheaply implement this; companies don't have to implement it now.) This should include during training. See <a href=\"https://drive.google.com/file/d/1FEQ8a-yPwp9gAIgqhs2NqZdifqdNR18n/edit?disco=AAABbToeBnA\">SL5 Weight Storage</a>. Scored holistically (until such time as some company starts doing this).",
+          "scores": {
+            "Anthropic": 10,
+            "DeepMind": 0,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Practices: isolated network",
+          "weight": 5,
+          "description": "Network egress should be bandwidth-limited to make exfiltrating weights take a long time; this should be enforced by hardware and armed guards such that it's quite robust. An implication is that developers can't download weights. (It suffices to say and partially demonstrate that you're able to quickly and cheaply implement this; companies don't have to implement it now.) This should include during training. See SL5 Weight Storage. Scored holistically (until such time as some company starts doing this).",
+          "description_html": "Network egress should be bandwidth-limited to make exfiltrating weights take a long time; this should be enforced by hardware and armed guards such that it's quite robust. An implication is that developers can't download weights. (It suffices to say and partially demonstrate that you're able to quickly and cheaply implement this; companies don't have to implement it now.) This should include during training. See <a href=\"https://drive.google.com/file/d/1FEQ8a-yPwp9gAIgqhs2NqZdifqdNR18n/edit?disco=AAABbToeBnA\">SL5 Weight Storage</a>. Scored holistically (until such time as some company starts doing this).",
+          "scores": {
+            "Anthropic": 10,
+            "DeepMind": 50,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Practices: secure developers' machines",
+          "weight": 5,
+          "description": "Isolate development from the rest of the host system, especially browsing. Use hardware keys for phishing-resistant authentication.",
+          "description_html": "Isolate development from the rest of the host system, especially browsing.   Use hardware keys for phishing-resistant authentication.",
+          "scores": {
+            "Anthropic": 25,
+            "DeepMind": 25,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Practices: multiparty controls",
+          "weight": 5,
+          "description": "This should not be bypassable, in order to prevent insider risk in addition to mere accidents. Approval should apply to actions, not access/privileges. Perhaps ideally one party would need to be using a secure workstation. Partial credit for multiparty controls for other things.",
+          "description_html": "This should not be bypassable, in order to prevent <i>insider risk</i> in addition to mere <i>accidents</i>. Approval should apply to <i>actions</i>, not <i>access/privileges</i>. Perhaps ideally one party would need to be using a secure workstation. Partial credit for multiparty controls for other things.",
+          "scores": {
+            "Anthropic": 10,
+            "DeepMind": 25,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Practices: secure boot",
+          "weight": 5,
+          "description": "Ideally the company cryptographically signs code that runs on accelerators (and has a good review process before signing code) and the accelerator has firmware such that it only runs code signed with the company's keys (including specific software, not just OSes). (Weights are only decrypted on accelerators.) Most chips don't enable this; partial credit for expressing interest in buying chips with on-chip security/verification features. See Secure, Governable Chips (CNAS: Aarne et al. 2024) and How Google enforces boot integrity on production machines (Google).",
+          "description_html": "Ideally the company cryptographically signs code that runs on accelerators (and has a good review process before signing code) and the accelerator has firmware such that it only runs code signed with the company's keys (including specific software, not just OSes). (Weights are only decrypted on accelerators.) Most chips don't enable this; partial credit for expressing interest in buying chips with on-chip security/verification features. See <a href=\"https://s3.us-east-1.amazonaws.com/files.cnas.org/documents/CNAS-Report-Tech-Secure-Chips-Jan-24-finalb.pdf#page=16\">Secure, Governable Chips</a> (CNAS: Aarne et al. 2024) and <a href=\"https://cloud.google.com/docs/security/boot-integrity\">How Google enforces boot integrity on production machines</a> (Google).",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 25,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Track record",
+          "weight": 20,
+          "description": "At least for the company's most powerful model weights. At least for training and internal deployment, not necessarily external deployment. Also ideally plan to achieve SL5 security optionality for code, but not necessarily research secrets. Optionality is the ability to implement it in a few months without excessive cost in money, labor, and especially velocity. Companies should make a roadmap. It's OK to assume that they will have a large boost to coding by the end, so they should first focus on stuff that requires serial wall-clock time, e.g. retrofitting datacenters. Companies should publicly explain their security goals — explain various adversaries and threats, which of them the company plans to be robust to at various times, and a high-level outline of necessary mitigations. For accountability, companies should do external auditing for whether the plan is adequate and reasonable and whether the company is on track. (Implementing costly security should be tied to capability/risk level; this is about developing the ability to implement it.) (Evaluated holistically until such time as a company announces relevant goals or creates a security roadmap.)",
+          "description_html": "At least for the company's most powerful model weights. At least for training and internal deployment, not necessarily external deployment. Also ideally plan to achieve SL5 security optionality for code, but not necessarily research secrets. <i>Optionality</i> is the ability to implement it in a few months without excessive cost in money, labor, and especially velocity. Companies should make a roadmap. It's OK to assume that they will have a large boost to coding by the end, so they should first focus on stuff that requires serial wall-clock time, e.g. retrofitting datacenters. Companies should publicly explain their security goals — explain various adversaries and threats, which of them the company plans to be robust to at various times, and a high-level outline of necessary mitigations. For accountability, companies should do external auditing for whether the plan is adequate and reasonable and whether the company is on track. (<i>Implementing</i> costly security should be tied to capability/risk level; this is about developing the <i>ability</i> to implement it.) (Evaluated holistically until such time as a company announces relevant goals or creates a security roadmap.)",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 0,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        }
+      ]
+    },
+    {
+      "category": "Risk info sharing",
+      "weight": 8,
+      "subcategories": [
+        {
+          "name": "Incident reporting",
+          "weight": 40,
+          "description": "Have a clear policy of telling at least CAISI and sometimes other companies when risks appear or something goes wrong (such that it can share this information further). This must include we caught our models scheming and someone successfully used our model for large-scale misuse but need not include someone tried to misuse our model but failed. Includes actual harm and near misses; ideally also includes warning signs (which are no fault of the company) like eval results and model organism results; ideally also includes issues implementing safety plans/policies. (An AI company should also set itself up to notice incidents, e.g. via logging and monitoring; that goes elsewhere.)",
+          "description_html": "<p>Have a clear policy of telling at least CAISI and sometimes other companies when risks appear or something goes wrong (such that it can share this information further). This must include <i>we caught our models scheming</i> and <i>someone successfully used our model for large-scale misuse</i> but need not include <i>someone tried to misuse our model but failed</i>. Includes actual harm and near misses; ideally also includes warning signs (which are no fault of the company) like eval results and <a href=\"https://www.alignmentforum.org/posts/ChDH335ckdvpxXaXX/model-organisms-of-misalignment-the-case-for-a-new-pillar-of-1\">model organism</a> results; ideally also includes issues implementing safety plans/policies. (An AI company should also set itself up to notice incidents, e.g. via logging and monitoring; that goes elsewhere.)</p>",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 0,
+            "OpenAI": 10,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Talk about extreme risks",
+          "weight": 15,
+          "description": "This especially includes risks from misalignment. The company should talk about how AI safety might be very difficult, risks might be hard to notice, and powerful capabilities might appear suddenly.",
+          "description_html": "This especially includes risks from misalignment. The company should talk about how AI safety might be very difficult, risks might be hard to notice, and powerful capabilities might appear suddenly.",
+          "scores": {
+            "Anthropic": 60,
+            "DeepMind": 30,
+            "OpenAI": 25,
+            "Meta": 0,
+            "xAI": 20,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Describe worst-case outcome",
+          "weight": 10,
+          "description": "Use specific numbers; clarify terms like \"catastrophe\" and \"extreme.\" This statement should be on the company's website, not just spoken by a leader in an interview. (It should not be contradicted by other things said by the company and its leadership.)",
+          "description_html": "Use specific numbers; clarify terms like \"catastrophe\" and \"extreme.\" This statement should be on the company's website, not just spoken by a leader in an interview. (It should not be contradicted by other things said by the company and its leadership.)",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 0,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Don't publish some capabilities research",
+          "weight": 35,
+          "description": "This includes how the company pretrains LMs and other relevant research like distributed training research. But sharing information about AI capabilities is good, and sharing research on post-training and especially scaffolding is fine unless it's on a particularly unsafe path.",
+          "description_html": "This includes how the company pretrains LMs and other relevant research like distributed training research. But sharing <i>information about AI capabilities</i> is good, and sharing research on post-training and especially scaffolding is fine unless it's on a particularly unsafe path.",
+          "scores": {
+            "Anthropic": 75,
+            "DeepMind": 25,
+            "OpenAI": 70,
+            "Meta": 0,
+            "xAI": 70,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        }
+      ]
+    },
+    {
+      "category": "Planning",
+      "weight": 6,
+      "subcategories": [
+        {
+          "name": "Safety plan",
+          "weight": 50,
+          "description": "The plan should focus on the rushed regime, not just the unrealistic unrushed regime. The plan should include responses to risks from scheming during internal deployment, misuse via API, and ideally human power grabs and theft of model weights or other IP.",
+          "description_html": "The plan should focus on the <a href=\"https://www.lesswrong.com/posts/tmWMuY5HCSNXXZ9oq/buck-s-shortform?commentId=TNFatFiqHd8BpAXEp\">rushed regime</a>, not just the unrealistic unrushed regime. The plan should include responses to risks from scheming during internal deployment, misuse via API, and ideally human power grabs and theft of model weights or other IP.",
+          "scores": {
+            "Anthropic": 25,
+            "DeepMind": 50,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Plan for how to use AGI",
+          "weight": 40,
+          "description": "Especially to prevent anyone from building catastrophically dangerous AI before achieving safety. Also to create public goods, especially biosecurity and cybersecurity. E.g.: build human-obsoleting AIs which are sufficiently aligned/trustworthy that we can safely defer to them (before building wildly superintelligent AI). Assume it will take 5-10 years after AGI to build such systems and give them sufficient time. To buy time, inform the US government and convince it to enforce nobody builds wildly superintelligent AI for a while (and likely limit AGI weights to allied projects with excellent security and control). Use AGI to increase the government's willingness to pay for nonproliferation and to decrease the cost of nonproliferation (build carrots to decrease cost of others accepting nonproliferation and build sticks to decrease cost to US of enforcing nonproliferation).",
+          "description_html": "Especially to prevent anyone from building catastrophically dangerous AI before achieving safety. Also to create public goods, especially biosecurity and cybersecurity. E.g.: <i>build human-obsoleting AIs which are sufficiently aligned/trustworthy that we can safely defer to them (before building wildly superintelligent AI). Assume it will take 5-10 years after AGI to build such systems and give them sufficient time. To buy time, inform the US government and convince it to enforce </i>nobody builds wildly superintelligent AI<i> for a while (and likely limit AGI weights to allied projects with excellent security and control). Use AGI to increase the government's willingness to pay for nonproliferation and to decrease the cost of nonproliferation (build carrots to decrease cost of others accepting nonproliferation and build sticks to decrease cost to US of enforcing nonproliferation).</i>",
+          "scores": {
+            "Anthropic": 0,
+            "DeepMind": 0,
+            "OpenAI": 0,
+            "Meta": 0,
+            "xAI": 0,
+            "Microsoft": 0,
+            "DeepSeek": 0
+          }
+        },
+        {
+          "name": "Prepare for a pivot",
+          "weight": 10,
+          "description": "In particular, explain what the company and its researchers might focus on during such a period, say that the company stays financially prepared for a one-year pause, and ensure stakeholders and researchers ensure this is a possibility. \"Pause\" especially means pausing development of dangerous capabilities or internal deployment, not just public releases.",
+          "description_html": "In particular, explain what the company and its researchers might focus on during such a period, say that the company stays financially prepared for a one-year pause, and ensure stakeholders and researchers ensure this is a possibility. \"Pause\" especially means pausing development of dangerous capabilities or internal deployment, not just public releases.",
+          "scores": {
+            "Anthropic": 10,
+            "DeepMind": 5,
+            "OpenAI": 0,
+            "Meta": 1,
+            "xAI": 0,
+            "Microsoft": 5,
+            "DeepSeek": 0
+          }
+        }
+      ]
+    }
+  ]
